@@ -1,0 +1,29 @@
+##
+## Add all known firmwares
+##
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer 
+firmware-b43-installer
+#endif
+zd1211-firmware
+firmware-linux
+firmware-netxen
+firmware-ralink
+firmware-realtek
+firmware-iwlwifi
+firmware-intelwimax
+firmware-ipw2x00
+firmware-atheros
+firmware-bnx2
+firmware-libertas
+bluez-firmware
+firmware-brcm80211
+firmware-amd-graphics
+firmware-cavium
+firmware-intel-sound
+firmware-misc-nonfree
+firmware-myricom
+firmware-qlogic
+firmware-samsung
+firmware-siano
+firmware-ti-connectivity

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+kali_menu_version=$(dpkg-query -W -f'${Version}\n' kali-menu)
+kali_menu_pidfile="/var/lock/kali-menu"
+
+# Wait until update-kali-menu is over
+if dpkg --compare-versions "$kali_menu_version" ge 2015.3.0; then
+    # This version puts the PID in its lock file
+    if [ -s $kali_menu_pidfile ]; then
+	pid=$(cat $kali_menu_pidfile)
+	while [ -n "$pid" ] && [ -e /proc/$pid ]; do
+	    echo "Sleeping 10 seconds as update-kali-menu is still running (pid $pid)..."
+	    sleep 10
+	done
+    fi
+else
+    # This version lacks PID info, we match on process name instead
+    while pgrep -f update-kali-menu >/dev/null; do
+	echo "Sleeping 10 seconds as update-kali-menu is still running..."
+	sleep 10
+    done
+fi

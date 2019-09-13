@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# Handle systems where /lib is not merged in /usr/lib
+if [ ! -h /lib ]; then
+    mv /usr/lib/live/config/* /lib/live/config/
+fi
+
+# Manually enabling pulseaudio for root since autospawning does
+# not work for root
+# See https://bugs.kali.org/view.php?id=2392
+systemctl --user enable pulseaudio.service || true
+
+# Enable cryptsetup in the initramfs for later use if the user
+# adds an encrypted persistence partition.
+# This is until https://bugs.debian.org/908220 has a proper fix.
+if [ -e /etc/cryptsetup-initramfs/conf-hook ]; then
+    if grep -q '^#CRYPTSETUP=' /etc/cryptsetup-initramfs/conf-hook; then
+	sed -i -e 's/^#CRYPTSETUP=.*/CRYPTSETUP=y/' /etc/cryptsetup-initramfs/conf-hook
+    else
+	echo "CRYPTSETUP=y" >>/etc/cryptsetup-initramfs/conf-hook
+    fi
+fi
+
+# Disable the udev rules renaming the network interfaces (can also be
+# achieved with kernel command line net.ifnames=0 but we don't have a nice
+# way to set it on the installed system)
+mkdir -p /etc/systemd/network /etc/udev/rules.d
+ln -sf /dev/null /etc/systemd/network/90-mac-for-usb.link
+ln -sf /dev/null /etc/systemd/network/99-default.link
+echo > /etc/udev/rules.d/73-special-net-names.rules
+
+# Rebuild the initramfs to include the last two changes (cryptsetup,
+# network device)
+update-initramfs -u
+
+# Run updatedb to initialize the database for the locate command
+if [ -x "$(which updatedb 2>/dev/null)" ]; then
+    updatedb
+fi
+
+# Mark kernel related packages on hold so that they are not upgraded in
+# the live system
+for pkg in $(dpkg-query -W -f'${binary:Package}\n' 'linux-image-*' 'linux-headers-*' 'linux-kbuild-*')
+do
+    apt-mark hold $pkg
+done

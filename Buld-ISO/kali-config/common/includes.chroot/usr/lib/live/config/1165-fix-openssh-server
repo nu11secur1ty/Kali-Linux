@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Allow PasswordAuthentification in sshd config
+sed -i -e 's|#\?\(PasswordAuthentication\) no|\1 yes|' /etc/ssh/sshd_config
+
+# Allow root login with password
+sed -i -e 's|#\?\(PermitRootLogin\) prohibit-password|\1 yes|' /etc/ssh/sshd_config
