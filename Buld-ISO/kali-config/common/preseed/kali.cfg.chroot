@@ -1,5 +1,0 @@
-# Various preseeding for auto-installed packages
-
-# Do not register it in inetd so that its status can be controlled
-# individually
-atftpd atftpd/use_inetd boolean false
