@@ -15,3 +15,4 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
     wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/BlueKeep/msfcall 
     bash msfcall
     sleep 5
+        rm msfcall
