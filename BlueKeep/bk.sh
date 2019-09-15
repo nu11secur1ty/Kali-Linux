@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 cd /usr/share/metasploit-framework/modules/exploits/windows
+    rm -rf rdp
     mkdir -p rdp
         cd rdp
             git clone https://github.com/nu11secur1ty/cve_2019_0708_bluekeep_rce.git
