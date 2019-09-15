@@ -11,5 +11,3 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
         msfdb init
         msfconsole 
 use exploit/windows/rdp/cve_2019_0708_bluekeep_rce
-exit 0;
-
