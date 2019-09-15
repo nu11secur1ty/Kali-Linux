@@ -13,5 +13,5 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
         msfdb init
         echo -e "\e[1;31mCopy and paste this command into your Metasploit session: (use exploit/windows/rdp/cve_2019_0708_bluekeep_rce)\e[0m"
     wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/BlueKeep/msfcall.sh 
-        a+x msfcall.sh
+        chmod a+x msfcall.sh
             bash msfcall.sh
