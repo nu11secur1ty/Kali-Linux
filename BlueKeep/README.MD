@@ -19,4 +19,7 @@ show targets
 ```bash
 SET target x
 ```
-
+- Exploit the target 
+```bash 
+exploit
+```
