@@ -3,7 +3,7 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
     rm -rf rdp
     mkdir -p rdp
         cd rdp
-            wget https://raw.githubusercontent.com/nu11secur1ty/cve_2019_0708_bluekeep_rce/master/cve_2019_0708_bluekeep_rce.rb
+            wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/BlueKeep/cve_2019_0708_bluekeep_rce/cve_2019_0708_bluekeep_rce.rb
             cd /usr/share/metasploit-framework/
                 gem install bundler && bundle
                 cd 
