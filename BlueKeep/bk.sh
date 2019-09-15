@@ -10,5 +10,5 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
                 cd 
         msfdb init
         echo -e "\e[31mCopy and paste this command into your Metasploit session: (use exploit/windows/rdp/cve_2019_0708_bluekeep_rce)"
-        exit 0;
+        sleep 1
         msfconsole 
