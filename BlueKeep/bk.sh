@@ -2,10 +2,12 @@
 cd /usr/share/metasploit-framework/modules/exploits/windows
     mkdir -p rdp
         cd rdp
-    git fetch origin pull/12283/head:bluekeep
-    git checkout bluekeep
-      gem install bundler && bundle
-        ./msfconsole -q
+            git clone https://github.com/nu11secur1ty/cve_2019_0708_bluekeep_rce.git
+            cd /usr/share/metasploit-framework/
+                git checkout bluekeep
+                gem install bundler && bundle
+                cd 
+        msfconsole 
 use exploit/windows/rdp/cve_2019_0708_bluekeep_rce
 exit 0;
 
