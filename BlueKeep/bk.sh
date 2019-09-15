@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-cd /opt
-  git clone https://github.com/rapid7/metasploit-framework.git
+cd /usr/share/metasploit-framework/modules/exploits/windows
+  
   cd metasploit-framework
     git fetch origin pull/12283/head:bluekeep
     git checkout bluekeep
