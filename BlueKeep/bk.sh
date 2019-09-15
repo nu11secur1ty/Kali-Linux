@@ -5,7 +5,6 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
         cd rdp
             git clone https://github.com/nu11secur1ty/cve_2019_0708_bluekeep_rce.git
             cd /usr/share/metasploit-framework/
-                git checkout bluekeep
                 gem install bundler && bundle
                 cd 
         msfdb init
