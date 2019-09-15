@@ -9,5 +9,6 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
                 gem install bundler && bundle
                 cd 
         msfdb init
-        echo -e "\e[32mCopy and paste this command into your Metasploit session: (use exploit/windows/rdp/cve_2019_0708_bluekeep_rce)"
-        msfconsole -q
+        echo -e "\e[31mCopy and paste this command into your Metasploit session: (use exploit/windows/rdp/cve_2019_0708_bluekeep_rce)"
+        exit 0;
+        msfconsole 
