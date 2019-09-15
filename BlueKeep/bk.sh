@@ -7,6 +7,7 @@ cd /usr/share/metasploit-framework/modules/exploits/windows
                 git checkout bluekeep
                 gem install bundler && bundle
                 cd 
+        msfdb init
         msfconsole 
 use exploit/windows/rdp/cve_2019_0708_bluekeep_rce
 exit 0;
