@@ -2,7 +2,7 @@
 
 More: https://github.com/rapid7/metasploit-framework/pull/12283
 
-- Start manipolation:
+- Start manipulating:
 ```link
 https://github.com/nu11secur1ty/Kali-Linux/blob/master/BlueKeep/cve_2019_0708_bluekeep_rce/cve_2019_0708_bluekeep_rce.rb#L398
 ```
