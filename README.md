@@ -5,6 +5,6 @@
 
 - Online Updater:
 ```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/up.py | bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/up.py | python
 ```
 --------------------------------------------------------------------------------------------
