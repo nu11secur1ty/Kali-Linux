@@ -1,3 +1,7 @@
+# Manual setting up
+
+-----------------------------------------------
+
 # Install
 ```bash
 apt install ntp
