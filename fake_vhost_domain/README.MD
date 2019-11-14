@@ -2,10 +2,12 @@
 So, I will fix this later, are you ok with this?  ;) :D
 BR
 
-- Execute builder:
+- Execution of building script online:
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/debelhui.sh | bash
 ```
-- Execute unbuilder
+- Removing of the fake Vhost - domain online:
 ```bas
-curl -s 
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh | bash
+```
+
