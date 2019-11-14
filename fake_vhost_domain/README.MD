@@ -10,6 +10,12 @@ wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost
 ```bas
 wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh
 ```
+# To be continued...
+- The next step is we create an exploit which will oblige the user to open your faceboook.com, sorry, it is my mistake facebook.com :D ;)
+ The point is, the user must pass through you like a gateway of his router and translate all his traffic to your `HTTP` bullshits not `HTTPS` ;) :D...
+
+----------------------------------------------------------------------------------------------------------------------
+
 ***ATTENTION:***`This is apart from serious hacking exploit which I will prepare for, ...whatever :D If you want to connect to me, please use something like email to connect with me, and you want to help wit CODE ok go go go.:D, I hope someone to help for this project. ;)`
 
 - The point is that I must surround the SSL and TLS protocols like that the user even not see this, just like that. He just will visit the website and insert his credentials and whatever. I'm already done with local exploit ;) but this is later alligator :D
