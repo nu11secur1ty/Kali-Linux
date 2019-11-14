@@ -4,10 +4,10 @@ BR
 
 - Downloading of building script:
 ```bash
-wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/debelhui.sh | bash
+wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/debelhui.sh
 ```
 - Downloading of removing script:
 ```bas
-wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh | bash
+wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh
 ```
 
