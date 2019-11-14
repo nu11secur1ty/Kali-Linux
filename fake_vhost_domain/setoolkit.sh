@@ -11,5 +11,4 @@ cd /etc/
 		cat >> hosts << EOF
 $IP $fuck
 EOF
-	systemctl restart apache2
 	exit 0;
