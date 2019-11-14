@@ -3,7 +3,8 @@
 #
 #
 # Prepare apache
-mv /etc/apache2/sites-available /etc/apache2/sites-available.backup
+cd /etc/apache2/sites-available 
+mv 000-default.conf 000-default.conf.backup
 
 echo "Type your fake domain, for example: 'kurec.com'"
 read fuck
