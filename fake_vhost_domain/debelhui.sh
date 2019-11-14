@@ -9,7 +9,7 @@ mv 000-default.conf 000-default.conf.backup
 echo "Type your fake domain, for example: 'kurec.com'"
 read fuck
 
-	mkdir -p /var/www/$fuck/public_html
+mkdir -p /var/www/$fuck/public_html
 cd /var/www/$fuck/public_html/
 	cat > index.html << EOF
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ cd /var/www/$fuck/public_html/
   </body>
 </html>
 EOF
-# Creatin vhost
+# Creating vhost
 chown -R www-data: /var/www/$fuck
 cd /etc/apache2/sites-available/
 	cat > $fuck.conf << EOF
@@ -41,7 +41,7 @@ cd /etc/apache2/sites-available/
     CustomLog ${APACHE_LOG_DIR}/$fuck-access.log combined
 </VirtualHost>
 EOF
-
+# Enabling vhost
 a2ensite $fuck
 systemctl restart apache2
 
