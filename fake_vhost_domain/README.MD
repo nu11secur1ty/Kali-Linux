@@ -2,12 +2,12 @@
 So, I will fix this later, are you ok with this?  ;) :D
 BR
 
-- Execution of building script online:
+- Downloading of building script:
 ```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/debelhui.sh | bash
+wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/debelhui.sh | bash
 ```
-- Removing of the fake Vhost - domain online:
+- Downloading of removing script:
 ```bas
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh | bash
+wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/fake_vhost_domain/remove_debeliq.sh | bash
 ```
 
