@@ -19,7 +19,7 @@ cd /var/www/$fuck/public_html/
     <title>Welcome to your fucking production</title>
   </head>
   <body>
-    <h1>Success! Welcome to your fucking production $fck.com set up completed!</h1>
+    <h1>Success! Welcome to your fucking production $fck set up completed!</h1>
   </body>
 </html>
 EOF
@@ -37,7 +37,7 @@ cd /etc/apache2/sites-available/
         AllowOverride All
     </Directory>
 
-    ErrorLog ${APACHE_LOG_DIR}/$fuck.com-error.log
+    ErrorLog ${APACHE_LOG_DIR}/$fuck-error.log
     CustomLog ${APACHE_LOG_DIR}/$fuck-access.log combined
 </VirtualHost>
 EOF
