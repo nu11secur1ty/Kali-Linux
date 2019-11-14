@@ -1,3 +1,3 @@
-**ATTENTION:** You should execute `sed -i '_your line number_d' /etc/hosts` manualy be cause `""` and `''`.
-So, I will fix this later ok ;)
+**ATTENTION:** You should execute `sed -i '_you line number' /etc/hosts` manually because `""` and `''`.
+So, I will fix this later, are you ok with this?  ;) :D
 BR
