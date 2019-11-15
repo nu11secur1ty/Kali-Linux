@@ -28,5 +28,4 @@ Running:
 	4) Run arpspoof to redirect traffic to your machine (as root):
 	   arpspoof -i <yourNetworkdDevice> -t <yourTarget> <theRoutersIpAddress>
 
-More Info:
-	http://www.thoughtcrime.org/software/sslstrip/
+BR nu11secur1ty
