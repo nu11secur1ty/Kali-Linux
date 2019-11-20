@@ -3,8 +3,8 @@
 
 -------------------------------------------------------------------------------------------
 
-- Online Updater:
+- Online Official Updater:
 ```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/up.py | python
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 ```
 --------------------------------------------------------------------------------------------
