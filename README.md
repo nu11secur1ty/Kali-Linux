@@ -8,7 +8,7 @@
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 ```
 --------------------------------------------------------------------------------------------
-- Online Unofficial Updater. ***WARNING:**** NOT RECOMMENDED
+- Online Unofficial Updater. ***WARNING:*** NOT RECOMMENDED
 A big part of the hacking tools will stop be working correctly.
 This installation will be without debugging tests!
 BR
