@@ -16,10 +16,8 @@ In addition, misuse of security and penetration testing tools within a network, 
 
 However, if you’re a professional penetration tester or are studying penetration testing with a goal of becoming a certified professional, there’s no better toolkit — at any price — than Kali Linux.
 
-```
-Even for experienced Linux users, Kali can pose some challenges. Although Kali is an open-source project, it’s not a wide-open source project, for reasons of security. The development team is small and trusted, packages in the repositories are signed both by the individual committer and the team, and — importantly — the set of upstream repositories from which updates and new packages are drawn is very small. Adding repositories to your software sources that have not been tested by the Kali Linux development team is a good way to cause problems on your system.
+`Even for experienced Linux users, Kali can pose some challenges. Although Kali is an open-source project, it’s not a wide-open source project, for reasons of security. The development team is small and trusted, packages in the repositories are signed both by the individual committer and the team, and — importantly — the set of upstream repositories from which updates and new packages are drawn is very small. Adding repositories to your software sources that have not been tested by the Kali Linux development team is a good way to cause problems on your system.`
 
-```
 
 -------------------------------------------------------------------------------------------
 
