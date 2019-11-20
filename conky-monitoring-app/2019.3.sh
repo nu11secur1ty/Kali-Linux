@@ -1,14 +1,10 @@
 #!/bin/bash
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
 # Taken from: https://github.com/nu11secur1ty/conky/blob/master/conky.sh
+# 2016-2019
 
 # Up
-apt update -y
-apt upgrade -y
-apt dist-upgrade -y
-apt autoremove -y
-dpkg --configure -a
-apt --fix-broken install -y
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
 
 ##### Installing conky ~ gui desktop monitor
