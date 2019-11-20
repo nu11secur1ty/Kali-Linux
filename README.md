@@ -2,7 +2,7 @@
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/wall/pp%2C550x550.u5.jpg)
 
 -------------------------------------------------------------------------------------------
-# Intro:
+# Introduce:
 
 Is Kali Linux Right For You?
 
