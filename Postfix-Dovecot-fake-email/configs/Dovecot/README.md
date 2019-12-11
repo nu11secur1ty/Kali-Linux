@@ -31,19 +31,3 @@ service auth {
   ...
 }
 ```
-
---------------------------------------------------------------------------------------------------------------
-
-# Besides setting the initial Postfix configuration, modify ***/etc/postfix/main.cf*** file to store mails with Maildir format.
-
-```bash
-vim /etc/postfix/main.cf
-```
-```css
-home_mailbox = Maildir/
-# inet_interfaces = localhost, 0.0.0.0
-inet_interfaces = localhost
-inet_protocols = all
-mydestination = $myhostname, localhost.$mydomain, $mydomain
-myhostname = mail.nu11secur1ty.com
-```
