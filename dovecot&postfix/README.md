@@ -1,6 +1,6 @@
 # Install dovecot
 ```bash
-apt install dovecot-common dovecot-imapd
+apt install dovecot-common dovecot-imapd dovecot-pop3d
 ```
 # Edit Dovecot main configuration file to allow IMAP, POP3 and LMPT protocols. Edit file /etc/dovecot/dovecot.conf
 
