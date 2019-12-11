@@ -7,3 +7,7 @@ apt install dovecot-common dovecot-imapd
 ```bash
 protocols = imap pop3 lmtp
 ```
+# Install Postfix
+```bash
+apt install postfix
+```
