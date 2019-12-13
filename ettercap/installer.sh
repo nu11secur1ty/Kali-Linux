@@ -13,8 +13,9 @@ cd /opt/
   cd ettercap
   mkdir build
   cd build
+  make clean-all
   cmake ../
-      make && make install
+  make && make install
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
 # make clean-all
