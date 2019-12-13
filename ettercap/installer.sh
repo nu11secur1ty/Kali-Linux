@@ -4,14 +4,15 @@ cd /opt/
   rm -rf *ettercap*
     rm -rf *build*
   git clone https://github.com/nu11secur1ty/ettercap.git
-    apt purge ettercap-common -y
-      rm -rf /usr/share/set
-    apt install cmake -y
+  cd ettercap
+  apt purge ettercap-common -y
+  rm -rf /usr/share/set
+      apt install cmake -y
       apt autoremove -y
       apt update -y
       apt autoremove -y
-    apt install gcc -y
-      mkdir build
+      apt install gcc -y
+  mkdir build
   cd build
       cmake ../ettercap/
       make && make install
