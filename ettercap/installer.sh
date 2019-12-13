@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 # nu11secur1ty
 cd /opt
+  rm -rf *ettercap*
   git clone https://github.com/nu11secur1ty/ettercap.git
-  apt purge ettercap-common
+  apt purge ettercap-common -y
   apt update -y
   apt autoremove -y
   apt install gcc -y
