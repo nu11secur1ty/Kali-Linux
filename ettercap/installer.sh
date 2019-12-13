@@ -14,7 +14,7 @@ cd /opt/
       apt install gcc -y
   mkdir build
   cd build
-      cmake ../ettercap/
+      cmake ../
       make && make install
 
 # If the build fails because you're missing a dependency:
