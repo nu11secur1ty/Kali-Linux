@@ -5,3 +5,7 @@
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/ettercap/installer.sh | bash
 ```
+- Old version
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/ettercap/installer_old.sh | bash
+```
