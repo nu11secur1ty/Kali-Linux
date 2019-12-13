@@ -1,11 +1,7 @@
 #!/usr/bin/bash
 # nu11secur1ty
-apt-get install -y debhelper bison check cmake flex ghostscript libbsd-dev \
-      libcurl4-openssl-dev libgeoip-dev libltdl-dev libluajit-5.1-dev \
-      libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev \
-      libgtk-3-dev libgtk2.0-dev
-      
-apt purge ettercap-common -y
+apt-get install -y debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
+      apt purge ettercap-common -y
 rm -rf /usr/share/set
       apt install cmake -y
       apt autoremove -y
@@ -21,6 +17,7 @@ cd /opt/
   make clean-all
   cmake ../
   make && make install
+  
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
 # make clean-all
