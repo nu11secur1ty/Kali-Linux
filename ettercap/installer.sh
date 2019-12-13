@@ -1,6 +1,10 @@
 #!/usr/bin/bash
 # nu11secur1ty
 cd /opt
+  git clone https://github.com/nu11secur1ty/ettercap.git
+  apt purge ettercap-common
+  apt autoremove -y
+  apt install gcc -y
 mkdir build
 cd build
 cmake ../
