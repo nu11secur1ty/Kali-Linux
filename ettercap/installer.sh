@@ -3,6 +3,7 @@
 cd /opt
   git clone https://github.com/nu11secur1ty/ettercap.git
   apt purge ettercap-common
+  apt update -y
   apt autoremove -y
   apt install gcc -y
 mkdir build
