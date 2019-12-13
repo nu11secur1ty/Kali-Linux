@@ -4,6 +4,8 @@ cd /opt
   rm -rf *ettercap*
   git clone https://github.com/nu11secur1ty/ettercap.git
   apt purge ettercap-common -y
+  rm -rf /usr/share/set
+  apt autoremove -y
   apt update -y
   apt autoremove -y
   apt install gcc -y
