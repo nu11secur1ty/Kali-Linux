@@ -7,6 +7,7 @@
       apt update -y
       apt autoremove -y
       apt install gcc -y
+      apt install libltdl-dev -y
 cd /opt/
   rm -rf *ettercap*
   git clone https://github.com/nu11secur1ty/ettercap.git
