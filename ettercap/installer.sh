@@ -1,22 +1,23 @@
 #!/usr/bin/bash
 # nu11secur1ty
-apt install debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev -y
-      apt purge ettercap-common -y
-rm -rf /usr/share/set
+apt install -y debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev 
+apt install -y libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev
+apt install -y libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
+apt purge ettercap-common -y
+      rm -rf /usr/share/set
       apt install cmake -y
       apt autoremove -y
       apt update -y
       apt autoremove -y
       apt install gcc -y
 cd /opt/
-  rm -rf *ettercap*
-  git clone https://github.com/nu11secur1ty/ettercap.git
-  cd ettercap
-  mkdir build
-  cd build
-  make clean-all
-  cmake ../
-  make && make install
+rm -rf *ettercap*
+git clone https://github.com/nu11secur1ty/ettercap.git
+cd ettercap
+mkdir build
+cd build
+cmake ../
+make && make install
   
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
