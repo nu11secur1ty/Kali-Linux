@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 # nu11secur1ty
-cd /opt
+cd /opt/
   rm -rf *ettercap*
     rm -rf *build*
   git clone https://github.com/nu11secur1ty/ettercap.git
@@ -13,7 +13,7 @@ cd /opt
     apt install gcc -y
       mkdir build
   cd build
-      cmake ../
+      cmake ../ettercap/
       make && make install
 
 # If the build fails because you're missing a dependency:
