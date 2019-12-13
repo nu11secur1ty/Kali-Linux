@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 # nu11secur1ty
-apt-get install debhelper bison check cmake flex ghostscript libbsd-dev \
+apt-get install -y debhelper bison check cmake flex ghostscript libbsd-dev \
       libcurl4-openssl-dev libgeoip-dev libltdl-dev libluajit-5.1-dev \
       libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev \
       libgtk-3-dev libgtk2.0-dev
