@@ -1,10 +1,5 @@
 #!/usr/bin/bash
 # nu11secur1ty
-cd /opt/
-  rm -rf *ettercap*
-    rm -rf *build*
-  git clone https://github.com/nu11secur1ty/ettercap.git
-  cd ettercap
   apt purge ettercap-common -y
   rm -rf /usr/share/set
       apt install cmake -y
@@ -12,11 +7,14 @@ cd /opt/
       apt update -y
       apt autoremove -y
       apt install gcc -y
+cd /opt/
+  rm -rf *ettercap*
+  git clone https://github.com/nu11secur1ty/ettercap.git
+  cd ettercap
   mkdir build
   cd build
-      cmake ../
+  cmake ../
       make && make install
-
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
 # make clean-all
