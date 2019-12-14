@@ -680,14 +680,14 @@ disable_dns_lookups = no
 disable_mime_output_conversion = no
 disable_vrfy_command = yes
 #inet_interfaces = localhost
-inet_interfaces = localhost, 192.168.1.21
+inet_interfaces = localhost
 inet_protocols = all
 masquerade_classes = envelope_sender, header_sender, header_recipient
 masquerade_domains = 
 masquerade_exceptions = root
 mydestination = $myhostname, localhost.$mydomain
 #myhostname = linux-a24y.suse
-myhostname = intranet.dev.publix.bgnews.info
+myhostname = nu11secur1ty.com
 mynetworks_style = subnet
 relayhost = 
 
