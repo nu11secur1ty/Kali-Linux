@@ -1,4 +1,4 @@
- root@mail:~# apt -y install dovecot-core dovecot-pop3d dovecot-imapd
+root@mail:~# apt -y install dovecot-core dovecot-pop3d dovecot-imapd
 root@mail:~# vi /etc/dovecot/dovecot.conf
 # line 30: uncomment
 
