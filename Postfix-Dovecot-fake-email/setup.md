@@ -37,3 +37,4 @@ unix_listener /var/spool/postfix/private/auth {
 }
 ```
 kali:~# systemctl restart dovecot 
+kali:~# systemctl restart postfix
