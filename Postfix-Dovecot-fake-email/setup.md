@@ -1,7 +1,9 @@
 ```bash
-kali:~# apt -y install dovecot-core dovecot-pop3d dovecot-imapd
-kali:~# vim /etc/dovecot/dovecot.conf
+kali:~# apt -y dovecot-pop3d dovecot-lmtpd dovecot-imapd dovecot-common 
+kali:~# apt -y install postfix
 ```
+kali:~# vim /etc/dovecot/dovecot.conf
+
 # line 30: uncomment
 ```bash
 listen = *, ::
