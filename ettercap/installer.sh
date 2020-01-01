@@ -6,7 +6,12 @@ apt install -y libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
 ################################################################
 # Use old binary for ettercap
 # apt purge ettercap-common -y
+rm -rf /usr/local/lib/etter*
+rm -rf /usr/bin/ettercap-nu11secur1ty
+
+# Remove old ettercap "libettercap" 
 apt remove ettercap-common ettercap-graphical -y
+
       apt update -y
       apt autoremove -y
       apt install gcc -y
@@ -20,7 +25,6 @@ cmake ../
 make && make install
 # Use old binary for ettercap
 # rm -rf /usr/bin/ettercap
-rm -rf /usr/bin/ettercap-nu11secur1ty
 ln -s /usr/local/bin/ettercap /usr/bin/ettercap-nu11secur1ty
   
 # If the build fails because you're missing a dependency:
