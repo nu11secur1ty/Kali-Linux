@@ -9,11 +9,12 @@ rm -rf /usr/bin/ettercap*
 # Remove old ettercap "libettercap" 
 apt remove ettercap-common ettercap-graphical -y
 
-      apt update -y
-      apt autoremove -y
-      apt install gcc -y
+apt update -y
+apt autoremove -y
+apt install gcc -y
+
 cd /opt/
-rm -rf *ettercap*
+      rm -rf *ettercap*
 
 # nu11secur1ty fork source
 git clone https://github.com/nu11secur1ty/ettercap.git
@@ -22,10 +23,10 @@ git clone https://github.com/nu11secur1ty/ettercap.git
 #git clone https://github.com/Ettercap/ettercap.git
 
 cd ettercap
-mkdir build
-cd build
-cmake ../
-make && make install
+      mkdir build
+      cd build
+            cmake ../
+      make && make install
 ln -s /usr/local/bin/ettercap /usr/bin/ettercap-nu11secur1ty
   
 # If the build fails because you're missing a dependency:
