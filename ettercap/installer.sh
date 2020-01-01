@@ -5,7 +5,7 @@ apt install -y libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet
 apt install -y libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
 ################################################################
 rm -rf /usr/local/lib/etter*
-rm -rf /usr/bin/ettercap-nu11secur1ty
+rm -rf /usr/bin/ettercap*
 # Remove old ettercap "libettercap" 
 apt remove ettercap-common ettercap-graphical -y
 
