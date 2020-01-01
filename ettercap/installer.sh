@@ -20,6 +20,7 @@ cmake ../
 make && make install
 # Use old binary for ettercap
 # rm -rf /usr/bin/ettercap
+rm -rf /usr/bin/ettercap-nu11secur1ty
 ln -s /usr/local/bin/ettercap /usr/bin/ettercap-nu11secur1ty
   
 # If the build fails because you're missing a dependency:
