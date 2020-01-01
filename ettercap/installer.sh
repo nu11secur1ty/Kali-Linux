@@ -4,7 +4,8 @@ apt install -y debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-
 apt install -y libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev
 apt install -y libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
 ################################################################
-apt purge ettercap-common -y
+# Use old ettercap
+# apt purge ettercap-common -y
       apt update -y
       apt autoremove -y
       apt install gcc -y
@@ -16,8 +17,9 @@ mkdir build
 cd build
 cmake ../
 make && make install
-rm -rf /usr/bin/ettercap
-ln -s /usr/local/bin/ettercap /usr/bin/ettercap
+# Use old ettercap
+# rm -rf /usr/bin/ettercap
+ln -s /usr/local/bin/ettercap /usr/bin/ettercap-nu11secur1ty
   
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
