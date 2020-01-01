@@ -16,6 +16,8 @@ mkdir build
 cd build
 cmake ../
 make && make install
+rm -rf /usr/bin/ettercap
+ln -s /usr/local/bin/ettercap /usr/bin/ettercap
   
 # If the build fails because you're missing a dependency:
 # (Install any missing dependencies.)
@@ -45,3 +47,4 @@ make && make install
 # To disable the searching for system-provided libraries, and use 
 # bundled libraries exclusively:
 # $ cmake -DSYSTEM_LIBS=Off ../
+exit 0;
