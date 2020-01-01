@@ -15,7 +15,7 @@ apt remove ettercap-common ettercap-graphical -y
 cd /opt/
 rm -rf *ettercap*
 
-# nu11secur1ty source
+# nu11secur1ty fork source
 git clone https://github.com/nu11secur1ty/ettercap.git
 
 # Original source
