@@ -14,7 +14,7 @@ apt remove ettercap-common ettercap-graphical -y
       apt install gcc -y
 cd /opt/
 rm -rf *ettercap*
-git clone https://github.com/nu11secur1ty/ettercap.git
+git clone https://github.com/Ettercap/ettercap.git
 cd ettercap
 mkdir build
 cd build
