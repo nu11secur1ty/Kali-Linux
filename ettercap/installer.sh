@@ -6,6 +6,7 @@ apt install -y libpcre3-dev libssl-dev libgtk-3-dev libgtk2.0-dev
 ################################################################
 # Use old binary for ettercap
 # apt purge ettercap-common -y
+apt remove ettercap-common ettercap-graphical -y
       apt update -y
       apt autoremove -y
       apt install gcc -y
