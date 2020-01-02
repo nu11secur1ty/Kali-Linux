@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# nu11secur1ty
+# nu11secur1ty 1.01.2020
 # 
 apt install -y debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev 
 apt install -y libgeoip-dev libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev
