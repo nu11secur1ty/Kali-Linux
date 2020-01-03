@@ -18,10 +18,10 @@ cd /opt/
       rm -rf *ettercap*
 
 # nu11secur1ty fork source
-git clone https://github.com/nu11secur1ty/ettercap.git
+# git clone https://github.com/nu11secur1ty/ettercap.git
 
 # Original source
-#git clone https://github.com/Ettercap/ettercap.git
+git clone https://github.com/Ettercap/ettercap.git
 
 cd ettercap
       mkdir build
