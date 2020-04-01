@@ -22,6 +22,7 @@ systemctl status ntp
 ```
 # Update 
 ```bash
-tpdate -u 3.debian.pool.ntp.org
+tpdate -u your.ntp.server.org
 ```
-
+# Configure your interface clock
+- - - Set your time zone
