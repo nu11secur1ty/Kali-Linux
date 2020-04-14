@@ -11,4 +11,5 @@ alias='java "$_SILENT_JAVA_OPTIONS"'
         echo "Check Version..."
         sleep 3
         java -version
+        javac -version
         exit 0;
