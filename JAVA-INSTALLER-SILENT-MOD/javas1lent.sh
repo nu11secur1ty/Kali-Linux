@@ -8,8 +8,9 @@ sleep 1
 unset _JAVA_OPTIONS
 sleep 1
 alias='java "$_SILENT_JAVA_OPTIONS"'
-        echo "Check Version..."
+        echo "Check Versions..."
         sleep 3
         java -version
+        echo "--------------"
         javac -version
         exit 0;
