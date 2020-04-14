@@ -1,4 +1,4 @@
-# Online installer
+# Online installer + FIX PICKED UP JAVA OPTIONS:
 
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/JAVA-INSTALLER-SILENT-MOD/logo/Java_logo_icon.png)
 
