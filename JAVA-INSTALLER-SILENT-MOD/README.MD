@@ -5,3 +5,6 @@
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/JAVA-INSTALLER-SILENT-MOD/javas1lent.sh | bash
 ```
+- - - Screen:
+
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/JAVA-INSTALLER-SILENT-MOD/logo/Screenshot%202020-04-14%2011:53:01.png)
