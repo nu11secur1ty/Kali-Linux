@@ -3,9 +3,9 @@
 - - - Check for installed packages
 
 ```bash
-dpkg -i | grep java
-dpkg -i | grep jdk
-dpkg -i | grep jre
+dpkg -l | grep java
+dpkg -l | grep jdk
+dpkg -l | grep jre
 ```
 
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/JAVA-INSTALLER-SILENT-MOD/logo/Java_logo_icon.png)
