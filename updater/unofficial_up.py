@@ -14,7 +14,7 @@ os.system('apt --fix-broken install -y')
 os.system('apt install -f -y')
 os.system('apt autoremove -y')
 
-question = input("If you neet to relogin or reboot? y/n: ")
+question = input("If you need to re-login or reboot? y/n: ")
 start_over = "action"
 if question == "y":
     start_over = os.system("telinit 6")
