@@ -3,6 +3,7 @@
 
 apt install -y default-jre
 apt install -y default-jdk
+apt install -y nodejs
 
 _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS"
 jvs=_JAVA_OPTIONS
