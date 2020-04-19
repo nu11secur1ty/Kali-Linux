@@ -18,4 +18,5 @@ alias='java "$_SILENT_JAVA_OPTIONS"'
         javac -version
         echo "--------------"
         node -v
+        echo "--------------"
         exit 0;
