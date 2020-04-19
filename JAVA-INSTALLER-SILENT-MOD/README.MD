@@ -1,5 +1,13 @@
 # Online installer + FIX PICKED UP JAVA OPTIONS:
 
+- - - Check for installed packages
+
+```bash
+dpkg -i | grep java
+dpkg -i | grep jdk
+dpkg -i | grep jre
+```
+
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/JAVA-INSTALLER-SILENT-MOD/logo/Java_logo_icon.png)
 
 ```bash
