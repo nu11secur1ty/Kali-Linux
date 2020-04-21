@@ -41,7 +41,7 @@ wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/con
 
 # Autostart
 cd /home/nu11secur1ty/.gnome/apps/
-https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/conky/conkyscript.sh.desktop
+wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/conky/conkyscript.sh.desktop
 
 
 if [ -e /home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ]; then
