@@ -12,7 +12,6 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 apt purge conky -y
 apt purge conky-all -y
 rm -rf /etc/conky
-rm -rf /usr/local/bin/*conky*
 rm /home/$your_dir/.conkyrc
 
 
