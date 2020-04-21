@@ -12,6 +12,7 @@ apt purge conky -y
 apt purge conky-all -y
 rm -rf /etc/conky
 rm -rf /home/nu11secur1ty/.config/autostart/
+rm /home/nu11secur1ty/conky.sh
 rm /home/nu11secur1ty/.conkyrc
 
 
