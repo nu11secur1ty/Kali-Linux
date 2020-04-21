@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/nu11secur1ty/.config/autostart/conky.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=conky
+Name=conky
+Comment[en_US]=
+Comment=
