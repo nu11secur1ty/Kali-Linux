@@ -10,9 +10,11 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 # remove old and clean
 apt purge conky -y
 apt purge conky-all -y
-rm -rf /home/nu11secur1ty/.gnome/apps/conky.sh
+
+# Clean
 rm -rf /etc/conky
-rm -rf /home/nu11secur1ty/.config/autostart/
+rm -rf /home/nu11secur1ty/.config/autostart/*conky*
+rm -rf /home/nu11secur1ty/.gnome/appsconkyscript.sh.desktop
 rm /home/nu11secur1ty/conky.sh
 rm /home/nu11secur1ty/.conkyrc
 
