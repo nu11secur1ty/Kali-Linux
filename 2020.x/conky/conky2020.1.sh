@@ -5,6 +5,14 @@
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
+# remove old and clean
+apt purge conky -y
+apt purge conky-all -y
+rm -rf /etc/conky
+rm -rf /usr/local/bin/*conky*
+rm .conkyrc
+
+
 
 ##### Installing conky ~ gui desktop monitor
 echo -e "\n\e[01;32m[+]\e[00m Installing conky"
