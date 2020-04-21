@@ -31,6 +31,8 @@ echo -e '${color dodgerblue3}WiFi (${addr wlan0}) ${hr 2}$color\n${color white}D
 file=/home/nu11secur1ty/conky.sh; [ -e $file ] && cp -n $file{,.bkup}
 echo -e '#!/bin/bash\ntimeout 10 killall -q conky\nsleep 15\nconky &' > $file
 chmod 0500 $file
+
+# Autostart
 mkdir -p /home/nu11secur1ty/.config/autostart/
 file=/home/nu11secur1ty/.config/autostart/conkyscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
 echo -e '\n[Desktop Entry]\nType=Application\nExec=/home/nu11secur1ty/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
