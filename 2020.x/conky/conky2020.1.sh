@@ -38,6 +38,7 @@ echo -e '${color dodgerblue3}WiFi (${addr wlan0}) ${hr 2}$color\n${color white}D
 cd /home/nu11secur1ty/.config/autostart/
 wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/conky/conky.sh
 
+  cd 
 
 # Autostart
 cd /home/nu11secur1ty/.gnome/apps/
