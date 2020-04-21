@@ -28,14 +28,14 @@ ifconfig eth1 &>/devnull && echo -e '${color dodgerblue3}LAN eth1 (${addr eth1})
 echo -e '${color dodgerblue3}WiFi (${addr wlan0}) ${hr 2}$color\n${color white}Down$color:  ${downspeed wlan0} KB/s${alignr}${color white}Up$color: ${upspeed wlan0} KB/s\n${color white}Downloaded$color: ${totaldown wlan0} ${alignr}${color white}Uploaded$color: ${totalup wlan0}\n${downspeedgraph wlan0 25,120 000000 00ff00} ${alignr}${upspeedgraph wlan0 25,120 000000 ff0000}$color\n\n${color dodgerblue3}CONNECTIONS ${hr 2}$color\n${color white}Inbound: $color${tcp_portmon 1 32767 count}  ${alignc}${color white}Outbound: $color${tcp_portmon 32768 61000 count}${alignr}${color white}Total: $color${tcp_portmon 1 65535 count}\n${color white}Inbound ${alignr}Local Service/Port$color\n$color ${tcp_portmon 1 32767 rhost 0} ${alignr}${tcp_portmon 1 32767 lservice 0}\n$color ${tcp_portmon 1 32767 rhost 1} ${alignr}${tcp_portmon 1 32767 lservice 1}\n$color ${tcp_portmon 1 32767 rhost 2} ${alignr}${tcp_portmon 1 32767 lservice 2}\n${color white}Outbound ${alignr}Remote Service/Port$color\n$color ${tcp_portmon 32768 61000 rhost 0} ${alignr}${tcp_portmon 32768 61000 rservice 0}\n$color ${tcp_portmon 32768 61000 rhost 1} ${alignr}${tcp_portmon 32768 61000 rservice 1}\n$color ${tcp_portmon 32768 61000 rhost 2} ${alignr}${tcp_portmon 32768 61000 rservice 2}' >> $file
 
 #--- Add to startup (each login)
-file=/home/nu11secur1ty/conky.sh; [ -e $file ] && cp -n $file{,.bkup}
+file=/usr/local/bin/conky.sh; [ -e $file ] && cp -n $file{,.bkup}
 echo -e '#!/bin/bash\ntimeout 10 killall -q conky\nsleep 15\nconky &' > $file
 chmod 0500 $file
 
 # Autostart
 mkdir -p /home/nu11secur1ty/.config/autostart/
 file=/home/nu11secur1ty/.config/autostart/conkyscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
-echo -e '\n[Desktop Entry]\nType=Application\nExec=/home/nu11secur1ty/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
+echo -e '\n[Desktop Entry]\nType=Application\nExec=/usr/local/bin/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
 
 if [ -e /home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ]; then
   #--- Create Conky refresh script (it gets installed later)
