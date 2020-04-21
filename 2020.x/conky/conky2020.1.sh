@@ -17,7 +17,7 @@ apt purge conky-all -y
 # Clean
 rm -rf /etc/conky
 rm -rf /home/nu11secur1ty/.config/autostart/*conky*
-rm -rf /home/nu11secur1ty/.gnome/appsconkyscript.sh.desktop
+rm -rf /home/nu11secur1ty/.gnome/apps/conkyscript.sh.desktop
 rm -rf /home/nu11secur1ty/conky.sh
 rm -rf /home/nu11secur1ty/*.conkyrc*
 
