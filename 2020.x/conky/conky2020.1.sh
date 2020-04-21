@@ -40,7 +40,7 @@ wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/con
 
 
 # Autostart
-file=/home/nu11secur1ty/.gnome/appsconkyscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
+file=/home/nu11secur1ty/.gnome/apps/conkyscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
 echo -e '\n[Desktop Entry]\nType=Application\nExec=/home/nu11secur1ty/.config/autostart/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
 
 if [ -e /home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ]; then
