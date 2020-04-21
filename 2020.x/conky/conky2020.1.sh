@@ -18,8 +18,8 @@ apt purge conky-all -y
 rm -rf /etc/conky
 rm -rf /home/nu11secur1ty/.config/autostart/*conky*
 rm -rf /home/nu11secur1ty/.gnome/appsconkyscript.sh.desktop
-rm /home/nu11secur1ty/conky.sh
-rm /home/nu11secur1ty/.conkyrc
+rm -rf /home/nu11secur1ty/conky.sh
+rm -rf /home/nu11secur1ty/*.conkyrc*
 
 
 ##### Installing conky ~ gui desktop monitor
@@ -43,10 +43,12 @@ file=/home/nu11secur1ty/.gnome/appsconkyscript.sh.desktop; [ -e $file ] && cp -n
 echo -e '\n[Desktop Entry]\nType=Application\nExec=/home/nu11secur1ty/.config/autostart/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
 
 if [ -e /home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ]; then
+  
   #--- Create Conky refresh script (it gets installed later)
   file=/home/nu11secur1ty/conky_refresh.sh; [ -e $file ] && cp -n $file{,.bkup}
   echo -e '#!/bin/bash\ntimeout 5 killall -9 -q -w conky\nconky &' > $file
   chmod 0500 $file
+  
   #--- Add keyboard shortcut (ctrl + r) to run the conky refresh script
   file=/home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml   #; [ -e $file ] && cp -n $file{,.bkup}
   grep -q '<property name="&lt;Primary&gt;r" type="string" value="/usr/local/bin/conky_refresh.sh"/>' $file || sed -i 's#<property name="\&lt;Alt\&gt;F2" type="string" value="xfrun4"/>#<property name="\&lt;Alt\&gt;F2" type="string" value="xfrun4"/>\n      <property name="\&lt;Primary\&gt;r" type="string" value="/usr/local/bin/conky_refresh.sh"/>#' $file
