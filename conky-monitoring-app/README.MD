@@ -5,3 +5,8 @@
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/conky-monitoring-app/2019.3.sh | bash
 ```
+- Kali Linux 2019.4
+
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/conky-monitoring-app/2019.4.sh | bash
+```
