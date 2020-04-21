@@ -2,8 +2,11 @@
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
 # 2016-2020
 
-# Give your home dit
+# Give your home dir before you begin!!!
 # Give the name of your homedir /home/_your_dir
+
+# Stop conky
+killall conky
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
