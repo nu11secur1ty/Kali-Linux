@@ -3,8 +3,7 @@
 # 2016-2020
 
 # Give your home dit
-echo "Give the name of your homedir"
-read your_dir
+# Give the name of your homedir /home/_your_dir
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
