@@ -1,7 +1,6 @@
 #!/bin/bash
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
-# Taken from: https://github.com/nu11secur1ty/conky/blob/master/conky.sh
-# 2016-2019
+# 2016-2020
 
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
