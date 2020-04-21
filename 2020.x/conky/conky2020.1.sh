@@ -31,7 +31,7 @@ echo -e '#!/bin/bash\ntimeout 10 killall -q conky\nsleep 15\nconky &' > $file
 chmod 0500 $file
 mkdir -p /home/nu11secur1ty/.config/autostart/
 file=/home/nu11secur1ty/.config/autostart/conkyscript.sh.desktop; [ -e $file ] && cp -n $file{,.bkup}
-echo -e '\n[Desktop Entry]\nType=Application\nExec=/usr/local/bin/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
+echo -e '\n[Desktop Entry]\nType=Application\nExec=/home/nu11secur1ty/conky.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=conky\nName=conky\nComment[en_US]=\nComment=' > $file
 
 if [ -e /home/nu11secur1ty/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ]; then
   #--- Create Conky refresh script (it gets installed later)
