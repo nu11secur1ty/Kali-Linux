@@ -2,6 +2,7 @@
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
 # 2016-2020
 
+your_dir=read
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
@@ -10,8 +11,7 @@ apt purge conky -y
 apt purge conky-all -y
 rm -rf /etc/conky
 rm -rf /usr/local/bin/*conky*
-rm .conkyrc
-
+rm /home/$your_dir/.conkyrc
 
 
 ##### Installing conky ~ gui desktop monitor
