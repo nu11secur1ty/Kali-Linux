@@ -35,7 +35,7 @@ echo -e '${color dodgerblue3}WiFi (${addr wlan0}) ${hr 2}$color\n${color white}D
 
 #--- Add to startup (each login)
 file=/home/nu11secur1ty/.config/autostart/conky.sh; [ -e $file ] && cp -n $file{,.bkup}
-echo -e '#!/bin/bash\ntimeout 10 killall -q conky\nsleep 15\nconky &' > $file
+echo -e '#!/usr/bin/bash\ntimeout 10 killall -q conky\nsleep 15\nconky &' > $file
 chmod 0500 $file
 
 # Autostart
