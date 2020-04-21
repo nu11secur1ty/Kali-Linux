@@ -37,9 +37,10 @@ echo -e '${color dodgerblue3}WiFi (${addr wlan0}) ${hr 2}$color\n${color white}D
 # Create startup script (each login)
 cd /home/nu11secur1ty/.config/autostart/
 wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/conky/conky.sh
-
+chown nu11secur1ty:users conky.sh
+  chmod 755 conky.sh
+  chmod a+x conky.sh
   cd 
-
 # Autostart
 cd /home/nu11secur1ty/.gnome/apps/
 wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2020.x/conky/conkyscript.sh.desktop
