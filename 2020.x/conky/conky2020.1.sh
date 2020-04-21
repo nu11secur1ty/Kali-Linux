@@ -2,7 +2,7 @@
 # nu11secur1ty - http://nu11secur1ty.blogspot.com/
 # 2016-2020
 
-your_dir=read
+read your_dir
 # Up
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
 
