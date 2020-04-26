@@ -20,7 +20,7 @@ nu11secur1ty@kali:~$ ffmpeg -ss 61.0 -t 2.3 -i Videos/Screencast_04-26-2020_09\:
 ```
 - - - Recommended:
 ```bash
-sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:55\:46\ PM.mp4 -r 3 -s 800x600 /home/nu11secur1ty/oo.gif
+sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:55\:46\ PM.mp4 -r 3 -s 800x500 /home/nu11secur1ty/oo.gif
 ```
 
 - - - Combine these images together into a GIF animation:
