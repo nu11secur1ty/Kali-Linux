@@ -2,7 +2,7 @@
 
 - - - Install required software:
 ```bash
-sudo apt install ffmpeg gifsicle imagemagick:
+sudo apt install ffmpeg gifsicle imagemagick
 ```
 
 - - - Custom directory, convert the video file to a series of small images:
