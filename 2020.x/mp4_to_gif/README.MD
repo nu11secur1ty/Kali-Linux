@@ -13,6 +13,12 @@ mkdir /tmp/gif/
 ```bash
 sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:35\:15\ PM.mp4 /home/nu11secur1ty/oo.gif
 ```
+
+- - - Custom convert
+```bash
+nu11secur1ty@kali:~$ ffmpeg -ss 61.0 -t 2.3 -i Videos/Screencast_04-26-2020_09\:55\:46\ PM.mp4 -f gif /home/nu11secur1ty/gg.gif
+```
+
 - - - Combine these images together into a GIF animation:
 ```bash
 nu11secur1ty@kali:~$ sudo gifsicle -d 10 -loop /home/nu11secur1ty/oo.gif
