@@ -18,6 +18,10 @@ sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:35\:15\ PM.mp4 /home/nu11secur1t
 ```bash
 nu11secur1ty@kali:~$ ffmpeg -ss 61.0 -t 2.3 -i Videos/Screencast_04-26-2020_09\:55\:46\ PM.mp4 -f gif /home/nu11secur1ty/oo.gif
 ```
+- - - Recommended:
+```bash
+sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:55\:46\ PM.mp4 -r 3 -s 800x600 /home/nu11secur1ty/oo.gif
+```
 
 - - - Combine these images together into a GIF animation:
 ```bash
