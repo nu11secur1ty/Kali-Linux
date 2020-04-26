@@ -18,5 +18,4 @@ sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:35\:15\ PM.mp4 /home/nu11secur1t
 nu11secur1ty@kali:~$ sudo gifsicle -d 10 -loop /home/nu11secur1ty/oo.gif
 ```
 - - - Optimise the GIF animation so the file size is smaller:
-
-`convert -layers Optimize animation.gif animation_optimized.gi`
+      convert -layers Optimize animation.gif animation_optimized.gi
