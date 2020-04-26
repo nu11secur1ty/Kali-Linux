@@ -9,7 +9,7 @@ sudo apt install ffmpeg gifsicle imagemagick:
 ```bash
 mkdir /tmp/gif/
 ```
-- - - Command for already done directory
+- - - Command for already done directory:
 ```bash
 sudo ffmpeg -i Videos/Screencast_04-26-2020_09\:35\:15\ PM.mp4 /home/nu11secur1ty/oo.gif
 ```
