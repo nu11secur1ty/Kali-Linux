@@ -15,10 +15,10 @@ os.system('sudo apt install -f -y')
 os.system('sudo apt autoremove -y')
 
 question = input("If you need to re-login or reboot? Default is (N)y/n:")
-start_over = "action"
+# start_over = "action"
 if question == "y":
     start_over = os.system("telinit 6")
-    print(start_over)
+    system(start_over)
 else:
     raise SystemExit
 
