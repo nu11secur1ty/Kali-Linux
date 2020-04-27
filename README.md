@@ -33,3 +33,7 @@ BR
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/unofficial_up.py | python3
 ```
+- - - online
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.py | python3
+```
