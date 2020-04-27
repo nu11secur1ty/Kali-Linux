@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Author @nu11secur1ty
 import os
 os.system('sudo apt update -y')
