@@ -30,9 +30,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 A big part of the hacking tools will stop be working correctly.
 This installation will be without debugging tests!
 BR
-```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/unofficial_up.py | python3
-```
+
 - - - online
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
