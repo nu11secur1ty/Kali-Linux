@@ -15,9 +15,9 @@ os.system('sudo apt install -f -y')
 os.system('sudo apt autoremove -y')
 
 # Offline mode
-#question = input("If you need to re-login or reboot? Default is (N)y/n:")
-#if question == "y":
-#    start_over = os.system("telinit 6")
-#else:
-#    raise SystemExit
+question = input("If you need to re-login or reboot? Default is (N)y/n:")
+if question == "y":
+    start_over = os.system("telinit 6")
+else:
+    raise SystemExit
 
