@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # Author @nu11secur1ty
 import os
-os.system('apt update -y')
-os.system('apt install -f -y')
-os.system('apt autoremove -y')
-os.system('dpkg --configure -a')
-os.system('apt --fix-broken install -y')
+os.system('sudo apt update -y')
+os.system('sudo apt install -f -y')
+os.system('sudo apt autoremove -y')
+os.system('sudo dpkg --configure -a')
+os.system('sudo apt --fix-broken install -y')
