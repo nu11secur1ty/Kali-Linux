@@ -11,6 +11,8 @@ rm -rf /usr/local/lib/etter*
 rm -rf /usr/bin/ettercap*
 # Remove old ettercap "libettercap" 
 apt remove ettercap-common ettercap-graphical -y
+rm -rf /usr/local/bin/ettercap
+rm -rf /etc/ettercap
 
 apt update -y
 apt autoremove -y
