@@ -15,11 +15,11 @@ os.system('sudo apt install -f -y')
 os.system('sudo apt autoremove -y')
 os.system('sudo apt full-upgrade -y')
 
-# Local update!
+# Local updatefunction!
 # question = input("If you need to re-login or reboot? Default is (N)y/n:")
 # start_over = "action"
 # if question == "y":
-    start_over = os.system("telinit 6")
+#    start_over = os.system("telinit 6")
 #    print(start_over)
 # else:
   #  raise SystemExit
