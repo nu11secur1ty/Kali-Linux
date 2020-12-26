@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Author @nu11secur1ty
 import os
 os.system('sudo apt update -y')
@@ -15,10 +15,11 @@ os.system('sudo apt install -f -y')
 os.system('sudo apt autoremove -y')
 os.system('sudo apt full-upgrade -y')
 
-question = input("If you need to re-login or reboot? Default is (N)y/n:")
+# Local update!
+# question = input("If you need to re-login or reboot? Default is (N)y/n:")
 # start_over = "action"
-if question == "y":
+# if question == "y":
     start_over = os.system("telinit 6")
 #    print(start_over)
-else:
-    raise SystemExit
+# else:
+  #  raise SystemExit
