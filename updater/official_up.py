@@ -22,4 +22,4 @@ os.system('sudo apt full-upgrade -y')
 #    start_over = os.system("telinit 6")
 #    print(start_over)
 # else:
-  #  raise SystemExit
+#  raise SystemExit
