@@ -4,6 +4,10 @@
 -------------------------------------------------------------------------------------------
 # Introduce:
 
+# NOTE: `Kali Linux can not upgrading properly from mirror repositories!`
+- - - Soon this will be fixed! =)
+  BR
+
 Is Kali Linux Right For You?
 
 As the distribution’s developers, you might expect us to recommend that everyone should be using Kali Linux. The fact of the matter is, however, that Kali is a Linux distribution specifically geared towards professional penetration testers and security specialists, and given its unique nature, it is NOT a recommended distribution if you’re unfamiliar with Linux or are looking for a general-purpose Linux desktop distribution for development, web design, gaming, etc.
