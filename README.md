@@ -1,6 +1,6 @@
 # Kali-Linux hacks and setup
 - - - current release
-[![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/release/KaliLinux2020.4.png)
+[![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/release/KaliLinux2020.4.png)](https://www.kali.org/downloads/)
 
 -------------------------------------------------------------------------------------------
 # Introduce:
