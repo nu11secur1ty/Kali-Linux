@@ -4,7 +4,7 @@
 # 2016-2019
 
 # Up
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python3
 
 
 ##### Installing conky ~ gui desktop monitor
