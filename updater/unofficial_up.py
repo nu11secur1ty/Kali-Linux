@@ -13,12 +13,3 @@ os.system('sudo dpkg --configure -a')
 os.system('sudo apt --fix-broken install -y')
 os.system('sudo apt install -f -y')
 os.system('sudo apt autoremove -y')
-
-# Offline mode
-question = input("If you need to re-login or reboot? Default is (N)y/n:")
-os.system('echo')
-if question == "y":
-    start_over = os.system("telinit 6")
-else:
-    raise SystemExit
-
