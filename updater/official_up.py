@@ -7,6 +7,7 @@ os.system('apt list --upgradable')
 #
 os.system('sudo apt update -y')
 os.system('sudo apt upgrade -y')
+os.system('sudo apt dist-upgrade -y')
 os.system('sudo apt install -f -y')
 os.system('sudo apt --fix-broken install -y')
 os.system('sudo apt --fix-missing install -y')
