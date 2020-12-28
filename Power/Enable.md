@@ -1,4 +1,4 @@
-# Disable Suspend And Hibernation
+# Enable Suspend And Hibernation
 
 ```bash
 systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
