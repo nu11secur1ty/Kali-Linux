@@ -3,7 +3,7 @@
 import os
 # Checking 
 print("Checking what is for upgrade\n")
-os.sysytem('apt list --upgradable')
+os.system('apt list --upgradable')
 #
 os.system('sudo apt update -y')
 os.system('sudo apt upgrade -y')
