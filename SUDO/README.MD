@@ -24,3 +24,7 @@ sudo su -
 - - - user link
 
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/SUDO/logo/protect_root_sudo_user.png)
+
+- - - Login as `root`
+
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/SUDO/logo/login_as_root.png)
