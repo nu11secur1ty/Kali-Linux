@@ -5,5 +5,5 @@ use strict;
 use warnings;
 use diagnostics;
 
-my $change = `sudo passwd root`;
+my $change = `passwd root`;
 	exit 0;
