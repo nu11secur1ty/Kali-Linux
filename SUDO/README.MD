@@ -12,6 +12,8 @@ sudo su -
 ```bash
 wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/pass.pl
 ```
+- then...
+
 ```perl
 perl pass.pl
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/omnium.pl | perl
