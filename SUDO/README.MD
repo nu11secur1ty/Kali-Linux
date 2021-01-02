@@ -7,7 +7,9 @@
 
 2. - Execute:
 ```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/omnium.pl | perl
+1. wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/pass.pl
+2. perl pass.pl
+3. curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/omnium.pl | perl
 ```
 3. Check:
 ```bash 
