@@ -4,6 +4,9 @@
 
 - - - Online patcher
 1. - Login as root
+```bash 
+sudo su -
+```
 
 2. - Execute:
 ```bash
