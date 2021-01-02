@@ -7,4 +7,5 @@ use Term::ANSIColor;
 our $omni = `sudo sed -i 's/root/#root/' /etc/sudoers`;
   print color('bold blue');
     print "$omni\n";
+    print "Done;";
       print color('reset');
