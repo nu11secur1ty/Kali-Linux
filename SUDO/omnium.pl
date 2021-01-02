@@ -6,7 +6,8 @@ use Term::ANSIColor;
 
 print color('bold red');
 print "Change your root password for su\n";
-my $pass_change = `sudo passwd root`;
+my $pass_change = `wget https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/pass.pl`;
+my $exec = `perl pass.pl`;
   print color('reset');
 
 print color('bold red');
