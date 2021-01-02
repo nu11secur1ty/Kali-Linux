@@ -17,3 +17,6 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/SUDO/om
 ```bash 
 sudo su -
 ```
+- - - Example:
+
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/SUDO/logo/protect_root_from_sudo.png)
