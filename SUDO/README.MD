@@ -20,3 +20,7 @@ sudo su -
 - - - Example:
 
 ![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/SUDO/logo/protect_root.png)
+
+- - - user link
+
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/SUDO/logo/protect_root_sudo_user.png)
