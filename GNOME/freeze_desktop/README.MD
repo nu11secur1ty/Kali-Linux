@@ -2,6 +2,12 @@
 - The video drivers:
 ------------------------------------------------------------------
 
+- Manual
+```
+Alt + F2
+# type r and press Enter
+```
+
 - - - NVIDIA Controllers:
 ```bash
 01:00.0 VGA compatible controller: NVIDIA Corporation GT218M [NVS 3100M] (rev a2) (prog-if 00 [VGA controller])
