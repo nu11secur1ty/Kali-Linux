@@ -20,4 +20,5 @@ telinit 6
 ```
 # NOTE:
 - This will fix gnome-session desktop freezing for Lenovo Thinkpad T410
-BR
+
+- BR
