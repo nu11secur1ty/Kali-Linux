@@ -14,3 +14,7 @@ apt update
 apt -y install nvidia-detect
 apt -y install nvidia-driver
 ```
+- - - reboot
+```bash 
+telinit 6
+```
