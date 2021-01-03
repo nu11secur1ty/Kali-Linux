@@ -8,3 +8,9 @@ Detected NVIDIA GPUs:
 Checking card:  NVIDIA Corporation GT218M [NVS 3100M] (rev a2)
 Uh oh. Failed to identify your Debian suite.
 ```
+- - - Installing
+```bash 
+apt update
+apt -y install nvidia-detect
+apt -y install nvidia-driver
+```
