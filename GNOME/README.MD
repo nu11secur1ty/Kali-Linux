@@ -2,6 +2,6 @@
 - soon...
 
 ```txt
-If you found something, please report here by using a pull request! =)
+If you found something, please report here by creating a new pull request! =)
 ```
 BR
