@@ -5,6 +5,7 @@
 
 - - - Download single inode
 ```bash
+apt install subversion -y
 svn checkout https://github.com/nu11secur1ty/Kali-Linux/trunk/$inode
 ```
 
