@@ -5,7 +5,7 @@
 
 - - - Download single inode
 ```bash
-svn checkout https://github.com/nu11secur1ty/CVE-mitre/trunk/$inode
+svn checkout https://github.com/nu11secur1ty/Kali-Linux/trunk/$inode
 ```
 
 -------------------------------------------------------------------------------------------
