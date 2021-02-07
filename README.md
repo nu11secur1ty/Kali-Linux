@@ -3,6 +3,11 @@
 
 [![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/release/KaliLinux2020.4.png)](https://www.kali.org/downloads/)
 
+- - - Download single inode
+```bash
+svn checkout https://github.com/nu11secur1ty/CVE-mitre/trunk/$inode
+```
+
 -------------------------------------------------------------------------------------------
 # Introduce:
 
