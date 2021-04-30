@@ -49,3 +49,9 @@ BR
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
+--------------------------------------------------------------------------------------------
+
+## Unofficial // beta updates
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/unofficial_up.py | python3
+```
