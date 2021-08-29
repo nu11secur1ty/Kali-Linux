@@ -1,5 +1,5 @@
 # brave-browser-Kali-Linux
-![](https://github.com/nu11secur1ty/brave-browser-Kali-Linux/blob/master/logo/saupload_brave-software-vector-logo.png)
+![](https://github.com/nu11secur1ty/brave-browser-Kali-Linux/blob/master/doc/saupload_brave-software-vector-logo.png)
 # Installing
 ```bash
 sudo apt install apt-transport-https
