@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-# idea from hacker3983
-# debug and developement nu11secur1ty
+# Original Idea from hacker 3983 
+# Test, Debug and Development @nu11secur1ty
 
 packages_list=(aircrack-ng aireplay-ng airmon-ng airodump-ng awk curl hostapd iwconfig lighttpd
 macchanger mdk3 unzip xterm openssl rfkill strings fuser)
