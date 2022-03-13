@@ -5,5 +5,4 @@ wget https://github.com/zaproxy/zaproxy/releases/download/v2.11.1/ZAP_2_11_1_uni
 bash ZAP_2_11_1_unix.sh
 sleep 5;
   cd 
-    rm -rf OWASP/
-exit 0;
+rm -rf OWASP/
