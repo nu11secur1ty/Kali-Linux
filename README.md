@@ -38,7 +38,10 @@ However, if you’re a professional penetration tester or are studying penetrati
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
+
 - - `NONE root`
+
+```bash
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
 or
