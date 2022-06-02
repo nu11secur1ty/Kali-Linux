@@ -34,12 +34,15 @@ However, if you’re a professional penetration tester or are studying penetrati
 -------------------------------------------------------------------------------------------
 
 ## Online Official Updater of the latest version:
-
+- - `root`
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
+```
+- - `NONE root`
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
 or
+
 ### NOTE: 
 - - Please login as root before you execute the command!
 - 
