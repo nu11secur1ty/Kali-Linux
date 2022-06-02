@@ -40,14 +40,10 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
 or
+### NOTE: 
+- - Please login as root before you execute the command!
+- 
 ```python
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python3
 ```
---------------------------------------------------------------------------------------------
-
-## Unofficial // beta updates of the latest version:
-- NOTE: 
-- - Please login as root before you execute the command!
-```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/unofficial_up.py | python3
-```
+BR
