@@ -33,7 +33,7 @@ However, if you’re a professional penetration tester or are studying penetrati
 
 -------------------------------------------------------------------------------------------
 
-## Online Official Updater:
+## Online Official Updater of the latest version:
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
@@ -54,7 +54,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 ```
 --------------------------------------------------------------------------------------------
 
-## Unofficial // beta updates
+## Unofficial // beta updates of the latest version:
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/unofficial_up.py | python3
 ```
