@@ -34,6 +34,12 @@ However, if you’re a professional penetration tester or are studying penetrati
 -------------------------------------------------------------------------------------------
 
 ## Online Official Updater of the latest version:
+
+- Online Unofficial Updater. ***WARNING:*** NOT RECOMMENDED
+A big part of the hacking tools will stop be working correctly.
+This installation will be without debugging tests!
+BR
+
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
@@ -41,16 +47,6 @@ sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/up
 or
 ```python
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python3
-```
---------------------------------------------------------------------------------------------
-- Online Unofficial Updater. ***WARNING:*** NOT RECOMMENDED
-A big part of the hacking tools will stop be working correctly.
-This installation will be without debugging tests!
-BR
-
-- - - online
-```bash
-curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
 --------------------------------------------------------------------------------------------
 
