@@ -52,4 +52,5 @@ or
 ```python
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python3
 ```
-BR
+demo:
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/Docs/UpKaliLinux-2022.2.gif)
