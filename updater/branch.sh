@@ -1,6 +1,4 @@
 #!/usr/bin/bash
-# Main Branch
-# kali-rolling
-echo "deb http://kali.org/kali kali-rolling main non-free contrib" | sudo tee /etc/apt/sources.list
+# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
 # kali-last-snapshot
-echo "deb-src http://kali.org/kali kali-rolling main non-free contrib" | sudo tee /etc/apt/sources.list
+echo "deb http://http.kali.org/kali kali-last-snapshot main contrib non-free" | sudo tee /etc/apt/sources.list
