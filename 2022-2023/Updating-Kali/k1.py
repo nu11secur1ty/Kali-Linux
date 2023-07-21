@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# @nu11secur1ty 2023
+# https://www.nu11secur1ty.com/
 import os
 
 os.system("dpkg --configure -a")
