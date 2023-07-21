@@ -1,3 +1,5 @@
+## For Virtual machines and others!
+
 ## Online:
 
 ## Updating Kali
