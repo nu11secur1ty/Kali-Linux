@@ -2,7 +2,7 @@
 
 ## NOTE: **For installation**
 
-If you use USB to install Kali, you must use the [DD](https://www.kali.org/docs/usb/live-usb-install-with-windows/) mthod from [`Rufus`](https://rufus.ie/en/) recording a bootable USB!
+If you use USB to install Kali, you must use the [DD](https://www.kali.org/docs/usb/live-usb-install-with-windows/) method from [`Rufus`](https://rufus.ie/en/) recording a bootable USB!
 
 ## UPDATING:
 
