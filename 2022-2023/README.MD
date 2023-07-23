@@ -1,5 +1,8 @@
 ## Kali Linux *
 
+## NOTE:
+If you use USB to install Kali, you must use the DD from [`Rufus`](https://rufus.ie/en/) recording a bootable USB!
+
 ## Add repo 2023
 ```bash
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" | sudo tee /etc/apt/sources.list
