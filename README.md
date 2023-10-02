@@ -52,7 +52,9 @@ sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/up
 ```
 or
 
-### NOTE: 
+## Direct updating
+***NOTE:***
+
 - - Please login as root before you execute the command!
 - 
 ```python
