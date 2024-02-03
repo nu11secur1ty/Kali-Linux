@@ -1,2 +1,2 @@
 #  Upgrading - directory
-- latest and current version
+- the latest and current version
