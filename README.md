@@ -52,7 +52,7 @@ sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/up
 ```
 or
 
-## Direct updating latest version:
+## Direct updating latest and current version:
 ***NOTE:***
 
 - - Please login as root before you execute the command!
