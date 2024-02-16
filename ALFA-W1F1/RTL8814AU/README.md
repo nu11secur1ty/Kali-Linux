@@ -572,6 +572,6 @@ After making and saving changes, reboot the router.
 
 - Some USB WiFi adapters require considerable electrical current and push the capabilities of the power available via USB port. One example is adapters that use the Realtek 8814au chipset. Using a powered multiport USB extension can be a good idea in cases like this.
 
-#### [Go to Main Menu](https://github.com/morrownr/USB-WiFi)
+#### [Go to Main Menu](https://github.com/nu11secur1ty/Kali-Linux/tree/master/ALFA-W1F1/RTL8814AU)
 
 -----
