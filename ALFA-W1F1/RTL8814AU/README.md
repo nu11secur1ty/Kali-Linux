@@ -119,7 +119,7 @@ compile and make a modification or two to the Makefile).
 * Numerous adapters that are based on the supported chipset.
 
 Note: If you are looking for information about what adapter to buy,
-click [here](https://github.com/morrownr/USB-WiFi) and look for Main Menu
+click [here](https://github.com/nu11secur1ty/Kali-Linux/tree/master/ALFA-W1F1/RTL8814AU) and look for Main Menu
 item 2 which will show information about and links to recommended adapters.
 
 ### Installation Information
