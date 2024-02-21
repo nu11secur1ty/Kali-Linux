@@ -1,4 +1,4 @@
-## ALFA-W1F1
+## ALFA-W1F1 Kali Linux
 
 ## Online install:
 
