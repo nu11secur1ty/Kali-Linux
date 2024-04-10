@@ -21,6 +21,8 @@ If you're on linux run the following commands. (Assuming a Debian Based Distribu
 **NOTE**: **if you are going to be using the Multi SMS utility, scroll down to the 'Multi SMS' section to learn how it works.**
 ## For Linux
 ```
+git clone https://github.com/nu11secur1ty/Kali-Linux SMSend-Anon-SMS-Sender
+# Original:
 git clone https://github.com/sytaxus/SMSend-Anon-SMS-Sender
 cd SMSend-Anon-SMS-Sender && chmod +x setup.sh && ./setup.sh
 ```
