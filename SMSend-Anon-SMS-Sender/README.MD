@@ -56,4 +56,4 @@ Updates and contributions are welcome, simply perform a pull request.
 - You cannot send a message to the **same** phone number twice in less than a 24 hours (Yes, even when using a vpn). 
 
 ## Disclaimer
-Do not use SMSend to harm others. The creator of this tool does not take any responsibility for any damage caused by SMSend.
+Do not use SMSend to harm others. I'm not responsible for any damage caused by SMSend.
