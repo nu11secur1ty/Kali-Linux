@@ -36,10 +36,11 @@ def Intro():
 ⠀⠀⠈⠙⠛⠛⠛⠛⠛⠛⠛⠉⠁⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠛⠛⠛⠋⠁⠀⠀
           {Colors.RESET}
           - SMSend -
-         {Colors.BLUE} By Sytaxus / cmdSNR {Colors.RESET}
+         {Colors.BLUE} By Sytaxus and nu11secur1ty: debugging plus development / cmdSNR {Colors.RESET}
     Instructions: This tool may {Colors.RED} limitations{Colors.RESET}.
     - In regards to questions, open an issue in the GitHub repo
-    - Check the https://github.com/nu11secur1ty/Kali-Linux/tree/master/SMSend-Anon-SMS-Sender, for full documentation if stuck.
+    - Check the https://github.com/sytaxus/SMSend-Anon-SMS-Sender/, for full documentation if stuck.
+    - Check the https://github.com/nu11secur1ty/Kali-Linux/tree/master/SMSend-Anon-SMS-Sender, for plugins
 """)
     
 def cls_scrn():
