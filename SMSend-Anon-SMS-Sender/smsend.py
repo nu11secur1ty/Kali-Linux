@@ -38,8 +38,8 @@ def Intro():
           - SMSend -
          {Colors.BLUE} By Sytaxus / cmdSNR {Colors.RESET}
     Instructions: This tool may {Colors.RED} limitations{Colors.RESET}.
-    - In regards to questions, open an issue in the github repo
-    - Check the https://github.com/sytaxus/SMSend-Anon-SMS-Sender/ , for full documentation if stuck.
+    - In regards to questions, open an issue in the GitHub repo
+    - Check the https://github.com/nu11secur1ty/Kali-Linux/tree/master/SMSend-Anon-SMS-Sender, for full documentation if stuck.
 """)
     
 def cls_scrn():
