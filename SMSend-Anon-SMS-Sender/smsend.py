@@ -126,7 +126,7 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
             phone_numbers = phone_numbers[:len(vpn_files)]
 
         for phone, vpn in zip(phone_numbers, vpn_files):
-            print(f"Sending SMS to {phone} using VPN config {vpn}\n")
+            print(f"Sending SMS to {phone} using VPN config {vpn}")
             if connect_vpn_proton(vpn, username, password) is not None:
                 if check_connectivity():
                     request_sms(phone, message)
