@@ -130,7 +130,7 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
             if connect_vpn_proton(vpn, username, password) is not None:
                 if check_connectivity():
                     request_sms(phone, message)
-                    print('SMS sent....')
+                    print('SMS sent....\n')
                 else:
                     print("Internet connection lost after VPN connection. Aborting SMS send.\n")
                 disconnect_vpn_proton()
