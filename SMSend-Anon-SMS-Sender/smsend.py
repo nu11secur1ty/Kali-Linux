@@ -62,7 +62,7 @@ def connect_vpn_proton(config_path, username, password):
         time.sleep(5)  
         return process
     except Exception as e:
-        print(f"Failed to connect to VPN: {e}\n")
+        print(f"Failed to connect to VPN: {e}")
         return None
 
 def check_connectivity(ip='8.8.8.8'):
@@ -87,13 +87,13 @@ def request_sms(phone, message):
             'message': message,
             'key': 'textbelt',
         })
-        print(resp.json() if resp.status_code == 200 else f"HTTP Error {resp.status_code}: {resp.text}\n")
+        print(resp.json() if resp.status_code == 200 else f"HTTP Error {resp.status_code}: {resp.text}")
     finally:
         print('Finished.\n - SMSend. - nu11secur1ty.\n')
 
 
 def multi_sms(vpn_directory, file_name_phone_num, message):
-    print("NOTE: EACH PHONE NUMBER WILL BE USING 1 VPN. Example: If you have 2 phone numbers in the file name and 1 .ovpn file in the vpn directory, then only ONE SMS will be sent.\n")
+    print("NOTE: EACH PHONE NUMBER WILL BE USING 1 VPN. Example: If you have 2 phone numbers in the file name and 1 .ovpn file in the vpn directory, then only ONE SMS will be sent.")
 
     if not check_connectivity():
         print("No internet connection available before VPN connection. Aborting operation.\n")
@@ -108,7 +108,7 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
         with open(file_name_phone_num, 'r') as file:
             phone_numbers = [line.strip() for line in file if line.strip()]
 
-        print(f"Searching for VPN configs in: {vpn_directory}\n")
+        print(f"Searching for VPN configs in: {vpn_directory}")
         vpn_files = [os.path.join(vpn_directory, f) for f in os.listdir(vpn_directory) if f.lower().endswith('.ovpn')]
 
         if not vpn_files:
@@ -161,9 +161,9 @@ def Begin():
             for i in region:
                 check.append(i)
             if len(check) > 3:
-                print('Country prefix invalid! (Cannot exceed 3 characters.)\n')
+                print('Country prefix invalid! (Cannot exceed 3 characters.)')
             elif http_detected >= 1:
-                print('Links are not allowed due to free api limitations.\n')
+                print('Links are not allowed due to free api limitations.')
             else:
                 full_number = region + phone_no_prefix
                 request_sms(full_number,message)
