@@ -62,7 +62,7 @@ def connect_vpn_proton(config_path, username, password):
         time.sleep(5)  
         return process
     except Exception as e:
-        print(f"Failed to connect to VPN: {e}")
+        print(f"Failed to connect to VPN: {e}\n")
         return None
 
 def check_connectivity(ip='8.8.8.8'):
@@ -70,7 +70,7 @@ def check_connectivity(ip='8.8.8.8'):
         subprocess.check_output(['ping', '-c', '4', ip])
         return True
     except subprocess.CalledProcessError:
-        print('No internet connection available..')
+        print('No internet connection available..\n')
         return False
 
 
@@ -87,16 +87,16 @@ def request_sms(phone, message):
             'message': message,
             'key': 'textbelt',
         })
-        print(resp.json() if resp.status_code == 200 else f"HTTP Error {resp.status_code}: {resp.text}")
+        print(resp.json() if resp.status_code == 200 else f"HTTP Error {resp.status_code}: {resp.text}\n")
     finally:
-        print('Finished.\n - SMSend. - nu11secur1ty.')
+        print('Finished.\n - SMSend. - nu11secur1ty.\n')
 
 
 def multi_sms(vpn_directory, file_name_phone_num, message):
-    print("NOTE: EACH PHONE NUMBER WILL BE USING 1 VPN. Example: If you have 2 phone numbers in the file name and 1 .ovpn file in the vpn directory, then only ONE SMS will be sent.")
+    print("NOTE: EACH PHONE NUMBER WILL BE USING 1 VPN. Example: If you have 2 phone numbers in the file name and 1 .ovpn file in the vpn directory, then only ONE SMS will be sent.\n")
 
     if not check_connectivity():
-        print("No internet connection available before VPN connection. Aborting operation.")
+        print("No internet connection available before VPN connection. Aborting operation.\n")
         return
 
     credentials_file = input('Enter the VPN credentials file name: ')
@@ -108,20 +108,20 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
         with open(file_name_phone_num, 'r') as file:
             phone_numbers = [line.strip() for line in file if line.strip()]
 
-        print(f"Searching for VPN configs in: {vpn_directory}")
+        print(f"Searching for VPN configs in: {vpn_directory}\n")
         vpn_files = [os.path.join(vpn_directory, f) for f in os.listdir(vpn_directory) if f.lower().endswith('.ovpn')]
 
         if not vpn_files:
-            print("No VPN configuration files found in the directory.")
+            print("No VPN configuration files found in the directory.\n")
             return
 
-        print(f"Found {len(vpn_files)} VPN config file(s).")
+        print(f"Found {len(vpn_files)} VPN config file(s).\n")
 
         if len(vpn_files) < len(phone_numbers):
-            print(f"Warning: Not enough VPN configs for the number of phone numbers. Only the first {len(vpn_files)} numbers will be sent.")
+            print(f"Warning: Not enough VPN configs for the number of phone numbers. Only the first {len(vpn_files)} numbers will be sent.\n")
             answ = input('Do you want to proceed with the available VPNs? (Y/n): ').lower()
             if answ == 'n':
-                print("Operation aborted.")
+                print("Operation aborted.\n")
                 return
             phone_numbers = phone_numbers[:len(vpn_files)]
 
@@ -161,9 +161,9 @@ def Begin():
             for i in region:
                 check.append(i)
             if len(check) > 3:
-                print('Country prefix invalid! (Cannot exceed 3 characters.)')
+                print('Country prefix invalid! (Cannot exceed 3 characters.)\n')
             elif http_detected >= 1:
-                print('Links are not allowed due to free api limitations.')
+                print('Links are not allowed due to free api limitations.\n')
             else:
                 full_number = region + phone_no_prefix
                 request_sms(full_number,message)
@@ -173,7 +173,7 @@ def Begin():
             multi_sms(vpn_directory,file_name,message)
             
     except Exception as e:
-        print(f'Invalid. Error: {e}')
+        print(f'Invalid. Error: {e}\n')
 
 if __name__ == "__main__":
     Begin()
