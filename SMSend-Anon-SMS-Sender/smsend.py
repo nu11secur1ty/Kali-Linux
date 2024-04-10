@@ -115,7 +115,7 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
             print("No VPN configuration files found in the directory.\n")
             return
 
-        print(f"Found {len(vpn_files)} VPN config file(s).\n")
+        print(f"Found {len(vpn_files)} VPN config file(s).")
 
         if len(vpn_files) < len(phone_numbers):
             print(f"Warning: Not enough VPN configs for the number of phone numbers. Only the first {len(vpn_files)} numbers will be sent.\n")
