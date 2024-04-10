@@ -89,7 +89,7 @@ def request_sms(phone, message):
         })
         print(resp.json() if resp.status_code == 200 else f"HTTP Error {resp.status_code}: {resp.text}")
     finally:
-        print('Finished.\n - SMSend. - SyTaxus.')
+        print('Finished.\n - SMSend. - nu11secur1ty.')
 
 
 def multi_sms(vpn_directory, file_name_phone_num, message):
@@ -132,13 +132,13 @@ def multi_sms(vpn_directory, file_name_phone_num, message):
                     request_sms(phone, message)
                     print('SMS sent....')
                 else:
-                    print("Internet connection lost after VPN connection. Aborting SMS send.")
+                    print("Internet connection lost after VPN connection. Aborting SMS send.\n")
                 disconnect_vpn_proton()
             else:
-                print(f"Failed to connect using {vpn}, skipping...")
+                print(f"Failed to connect using {vpn}, skipping...\n")
 
     except Exception as e:
-        print(f"An error occurred in multi_sms: {e}")
+        print(f"An error occurred in multi_sms: {e}\n")
 
 def Begin():
     cls_scrn()
