@@ -31,7 +31,8 @@ python nozzle.py
 ```
 Order: 
 leave a message with the plan that you want!
-for example: ` $7/200 texts`
+for example: ` $7/200 texts`:
+
 [Bying on](https://www.paypal.com/donate/?hosted_button_id=ZPQZT5XMC5RFY)
 
 
