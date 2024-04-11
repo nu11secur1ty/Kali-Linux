@@ -10,9 +10,10 @@ pip install -r requirements.txt
 ```
 
 ### Usage:
-- Just run the program =)
+- Just download, and run the program =)
 
 ```python
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/Soof-SMS/downloader.sh | sh
 python nozzle.py
 ```
 
