@@ -36,6 +36,10 @@ for example: ` $7/200 texts`:
 
 [Bying on](https://www.paypal.com/donate/?hosted_button_id=ZPQZT5XMC5RFY)
 
+- NOTE:
+
+***Within 2 working days, you will receive a key to your email for feedback!***
+
 
 ### WARNING:
 DO NOT DO MALICIOUS ACTIONS BY USING THIS SOFTWARE, YOU CAN DESTROY SOMEONE'S LIFE IF YOU ARE VERY STUPID!
