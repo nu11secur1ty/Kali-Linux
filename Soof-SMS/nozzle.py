@@ -20,6 +20,7 @@ mess = input()
 print(Style.RESET_ALL)
 
 ## Sending of the message
+## When you have a key you can put it on 'key': 'YOUR_KEY'
 resp = requests.post('https://textbelt.com/text', {
   'phone': phone,
   'message': mess,
