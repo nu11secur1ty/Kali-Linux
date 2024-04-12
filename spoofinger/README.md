@@ -13,9 +13,9 @@ API_KEY = ""
 +33XXXXXXXXX
 ......
 ```
-* Step 3: Execute Sulk
+* Step 3: Execute spoofinger
 ```
-python Sulk.py
+python spoofinger.py
 ```
 
 # Notes
