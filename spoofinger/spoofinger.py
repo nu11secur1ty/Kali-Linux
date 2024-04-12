@@ -39,7 +39,9 @@ aa    ]8I 88b,   ,a8" "8a,   ,a8" "8a,   ,a8"  88    88 88       88 "8a,   ,d88 
     print(colors.WARNING + "spoofinger (SMS Bulk) - Bulk SMS using the textbelt API | " + colors.OKGREEN + "Author: " + colors.WARNING + "nu11secur1ty | " + colors.OKGREEN + "Website: " + colors.WARNING + "https://www.nu11secur1ty.com/\n" + colors.ENDC)
 
 def clear():
-    os.system("cls")
+    # For Windows 8,10, 11
+    # os.system("clear")
+    os.system("clear")
 
 def error():
     banner()
