@@ -1,4 +1,7 @@
 # spoofinger (SMS Bulk)
+
+![](https://github.com/nu11secur1ty/Kali-Linux/blob/master/spoofinger/docs/logo.png)
+
 spoofinger is a tool written in Python3 that allows you to send bulk SMS via the Textbelt API.
 
 # Use
