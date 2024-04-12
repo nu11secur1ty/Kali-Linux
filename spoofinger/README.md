@@ -9,9 +9,9 @@ API_KEY = ""
 ```
 * Step 2: Add the phone numbers (including extension) of the targets in the [numbers.txt](https://github.com/nu11secur1ty/Kali-Linux/blob/master/spoofinger/numbers.txt) file.
 ```
-+34XXXXXXXXX
-+33XXXXXXXXX
-......
++131231233313
++123213331312
++131231233313
 ```
 * Step 3: Execute spoofinger
 ```
