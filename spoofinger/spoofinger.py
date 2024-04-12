@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # nu11secur1ty 2024 
-# Libraries
+
 import requests
 import os
 from config import API_KEY
