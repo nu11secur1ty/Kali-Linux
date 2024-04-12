@@ -32,3 +32,7 @@ python spoofinger.py
 * It is not recommended to use the free API, as it only allows you to send one SMS to one recipient per day.
 * When you purchase the KEY API, remember to select 'worldwide' to be able to send SMS to any recipient regardless of their location.
 * The tool has been tested on Linux systems and Windows systems with Powershell.
+
+### WARNING:
+DO NOT DO MALICIOUS ACTIONS BY USING THIS SOFTWARE, YOU CAN DESTROY SOMEONE'S LIFE IF YOU ARE VERY STUPID!
+EVERY MALICIOUS ACTION WILL BE PUNISHED BY THE LAW!
