@@ -2,12 +2,12 @@
 spoofinger is a tool written in Python3 that allows you to send bulk SMS via the Textbelt API.
 
 # Use
-* Step 1: Add [Textbelt API](https://textbelt.com/purchase/?generateKey=1) in [config.py](https://github.com/pablokbg/Sulk/blob/main/config.py) file.
+* Step 1: Add [Textbelt API](https://textbelt.com/purchase/?generateKey=1) in [config.py](https://github.com/nu11secur1ty/Kali-Linux/blob/master/spoofinger/config.py) file.
 ```
 # API textbelt.com
 API_KEY = ""
 ```
-* Step 2: Add the phone numbers (including extension) of the targets in the [numbers.txt](https://github.com/pablokbg/Sulk/blob/main/numbers.txt) file.
+* Step 2: Add the phone numbers (including extension) of the targets in the [numbers.txt](https://github.com/nu11secur1ty/Kali-Linux/blob/master/spoofinger/numbers.txt) file.
 ```
 +34XXXXXXXXX
 +33XXXXXXXXX
