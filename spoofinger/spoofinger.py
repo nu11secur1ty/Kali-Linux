@@ -37,7 +37,7 @@ aa    ]8I 88b,   ,a8" "8a,   ,a8" "8a,   ,a8"  88    88 88       88 "8a,   ,d88 
           88                                                          "Y8bbdP"                                                                                         
     """ + colors.ENDC)
     print(colors.WARNING + "spoofinger (SMS Bulk) - Bulk SMS using the textbelt API | " + colors.OKGREEN + "Author: " + colors.WARNING + "nu11secur1ty | " + colors.OKGREEN + "Website: " + colors.WARNING + "https://www.nu11secur1ty.com/" + colors.ENDC)
-    print(colors.WARNING + "Press Ctrl + C if you don't want to use the program\n" + colors.OKGREEN + colors.ENDC)
+    print(colors.WARNING + "Press Ctrl + C if you don't want to use the program!\n" + colors.OKGREEN + colors.ENDC)
 
 
 def clear():
