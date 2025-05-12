@@ -64,7 +64,12 @@ or
 ## Direct updating the latest and current version:
 ***NOTE:***
 
-- - Please login as root before you execute the command!
+- - Please log in as root before you execute the command!
+
+- - - Check if you are with the latest copy of the Kali Linux VM
+  
+[link](https://www.kali.org/get-kali/#kali-virtual-machines)
+
 - 
 ```python
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/official_up.py | python3
