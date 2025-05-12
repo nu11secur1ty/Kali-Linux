@@ -46,9 +46,9 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater
 ```
 - - `root`
   
-  - 1 Check if you are with the latest copy of the Kali Linux VM
+- - - Check if you are with the latest copy of the Kali Linux VM
   
-  - [link](Check if you are with the latest copy of the Kali Linux VM)
+![link](Check if you are with the latest copy of the Kali Linux VM)
   
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
