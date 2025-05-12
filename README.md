@@ -45,6 +45,11 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/2022-20
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/branch.sh | bash
 ```
 - - `root`
+  
+  - 1 Check if you are with the latest copy of the Kali Linux VM
+  
+  - [link](Check if you are with the latest copy of the Kali Linux VM)
+  
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Kali-Linux/master/updater/online.sh | bash
 ```
