@@ -35,7 +35,6 @@ tail -f /var/www/html/data/usernames.txt
 ```
 ### Open browser 
 - the attacker can test by accessing 127.0.0.1 on the browser
-#### ![image](img/fb.png)
 - the victim can also connect to a real Facebook login site (access 10.0.2.4 on the browser)
 
 ### ettercap's configurations
@@ -44,7 +43,7 @@ vim /etc/ettercap/etter.conf
 ```
 - modify ec_uid, ec_gid = 0
 - uncomment linux setting
-#### ![image](img/conf.png)
+
 ```bash=
 vim /etc/ettercap/etter.dns 
 ```
