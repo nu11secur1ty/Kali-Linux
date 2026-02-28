@@ -52,8 +52,6 @@ ettercap -G
 - add the victims' ip address to target 1
 - start MITM attacks: ARP poisoning
 - enable dns_spoof plugin
-
-#### ![image](img/DNS.png)
 - start unified sniffing 
 
 ### victim is spoofed
