@@ -1,6 +1,6 @@
 ## Setup
 
-*** TESTING MODE ***
+***TESTING MODE***
 
 ### Attacker 
 - OS: Kali Linux
