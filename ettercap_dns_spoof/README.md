@@ -1,24 +1,12 @@
-# Phishing-with-DNS-spoofing
-A Phishing website (fack Facebook login page) and DNS spoofing demo
-## Environment
-- [x] Virtual box (NAT network is required)
-- [x] Host VM x 2 (or more)
-- [x] Attacker and victim both connect to the NAT network
-- [X] A fack Facebook login page
-
 ## Setup
 ### Attacker 
-- OS: Ubuntu 22.04 (Kali and others that can use ettercap are accepted)
-- NAT network (ip address: 10.0.2.4)
+- OS: Kali Linux
 
 ### Victim 
-- OS: Windows XP
-- NAT network (ip address: 10.0.2.7)
-- two VMs can connect to each other (attacker pings victim)
+- OS: Windows*
 
 
 ## Deploying Phishing Sites
-### Deploying a fack facebook site on attacker's localhost
 
 ```bash=
 cd site
@@ -35,16 +23,17 @@ tail -f /var/www/html/data/usernames.txt
 ```
 ### Open browser 
 - the attacker can test by accessing 127.0.0.1 on the browser
-- the victim can also connect to a real Facebook login site (access 10.0.2.4 on the browser)
+- the victim can also connect to a real domain login site (access 10.0.2.4 on the browser)
 
-### ettercap's configurations
-```bash=
+### ettercap's configurations: 
+
+```bash
 vim /etc/ettercap/etter.conf 
 ```
 - modify ec_uid, ec_gid = 0
 - uncomment linux setting
-
-```bash=
+  
+```bash
 vim /etc/ettercap/etter.dns 
 ```
 - add your_host.com into target list
