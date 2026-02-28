@@ -47,7 +47,7 @@ vim /etc/ettercap/etter.conf
 ```bash=
 vim /etc/ettercap/etter.dns 
 ```
-- add facebook.com into target list
+- add your_host.com into target list
 ```
 your_host.com      A   [your_server_attack_IP]
 *.your_host.com    A   [your_server_attack_IP]
