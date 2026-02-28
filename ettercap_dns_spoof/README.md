@@ -60,6 +60,7 @@ ettercap -G
 - add the victims' ip address to target 1
 - start MITM attacks: ARP poisoning
 - enable dns_spoof plugin
+
 #### ![image](img/DNS.png)
 - start unified sniffing 
 
@@ -75,13 +76,7 @@ ping facebook.com
 - the account and password are shown on ettercap and usernames.txt 
 
 
-## Reference
-- https://www.youtube.com/watch?v=4i7kc8cY654
-- https://www.kalilinux.in/2019/07/ettercap-dns-spoofing-in-kali-linux.html
-- https://github.com/htr-tech/zphisher
-
-
-
+# console: 
 ```bash
 ettercap -T -i your_interface_monitoring -M arp:remote -P dns_spoof /your_gateway_listener// /your_attack_IP//
 ```
