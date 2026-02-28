@@ -50,9 +50,9 @@ vim /etc/ettercap/etter.dns
 ```
 - add facebook.com into target list
 ```
-your_host.com      A   [ВАШЕТО_IP]
-*.your_host.com    A   [ВАШЕТО_IP]
-www.your_host.com  A   [ВАШЕТО_IP]
+your_host.com      A   [your_server_attack_IP]
+*.your_host.com    A   [your_server_attack_IP]
+www.your_host.com  A   [your_server_attack_IP]
 ```
 
 ### ettercap DNS spoofing
