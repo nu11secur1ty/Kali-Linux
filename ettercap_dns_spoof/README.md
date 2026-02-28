@@ -19,7 +19,7 @@ A Phishing website (fack Facebook login page) and DNS spoofing demo
 
 ## Deploying Phishing Sites
 ### Deploying a fack facebook site on attacker's localhost
-- the source code of the site is based on [zphisher](https://github.com/htr-tech/zphisher)
+
 ```bash=
 cd site
 cp * /var/www/html/
