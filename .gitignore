@@ -1,2 +1,4 @@
 Soof-SMS/__pycache__/
 Soof-SMS/requests
+Soof-SMS/**/*.pyc
+Soof-SMS/**/__pycache__/
