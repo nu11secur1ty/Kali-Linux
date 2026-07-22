@@ -30,7 +30,7 @@ python nozzle.py
  $25/1700 texts
  $47/3500 texts
 ```
-- Order: 
+- Order:
 leave a message with the plan that you want!
 
 for example: ` $7/200 texts`:
