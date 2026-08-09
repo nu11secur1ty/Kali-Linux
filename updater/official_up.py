@@ -5,66 +5,66 @@ import os
 import subprocess
 
 def run_command(cmd):
-    """Изпълнява команда и показва изхода"""
-    print(f"\n[+] Изпълнявам: {cmd}")
+    """Execute command and display output"""
+    print(f"\n[+] Executing: {cmd}")
     result = os.system(cmd)
     if result != 0:
-        print(f"[-] Командата завърши с грешка: {result}")
+        print(f"[-] Command failed with error: {result}")
     return result
 
 def get_space_info():
-    """Показва информация за свободното място в /boot"""
-    print("\n[+] Свободно място в /boot:")
+    """Display free space information for /boot"""
+    print("\n[+] Free space in /boot:")
     os.system('df -h /boot')
-    print("\n[+] Инсталирани ядра:")
+    print("\n[+] Installed kernels:")
     os.system('ls -la /boot/vmlinuz-* 2>/dev/null | wc -l')
 
 def cleanup_boot():
-    """Почиства /boot от стари ядра"""
-    print("\n[!] ВНИМАНИЕ: Почиствам /boot от стари ядра")
+    """Clean /boot from old kernels"""
+    print("\n[!] WARNING: Cleaning /boot from old kernels")
     
-    # Вземаме текущото работещо ядро
+    # Get current running kernel
     current_kernel = os.uname().release
-    print(f"[+] Текущо ядро: {current_kernel}")
+    print(f"[+] Current kernel: {current_kernel}")
     
-    # Списък с всички инсталирани ядра
+    # List all installed kernels
     cmd = "dpkg --list | grep -E 'linux-image-[0-9]' | awk '{print $2}'"
     result = subprocess.getoutput(cmd)
     kernels = result.split('\n')
     
-    # Изтриваме стари ядра (запазваме текущото и последното)
+    # Remove old kernels (keep current and latest)
     for kernel in kernels:
         if kernel and current_kernel not in kernel:
-            print(f"[+] Премахвам старо ядро: {kernel}")
+            print(f"[+] Removing old kernel: {kernel}")
             run_command(f'sudo apt purge -y {kernel}')
     
-    # Ръчно почистване на остатъчни файлове
-    print("\n[+] Ръчно почистване на /boot...")
+    # Manual cleanup of leftover files
+    print("\n[+] Manual cleanup of /boot...")
     run_command('sudo rm -f /boot/initrd.img-*.old-dkms')
     run_command('sudo rm -f /boot/initrd.img-*.*.*-kali*')
     run_command('sudo rm -f /boot/vmlinuz-*.*.*-kali*')
     
-    # Също почистваме временните файлове
+    # Also clean temporary files
     run_command('sudo apt autoclean -y')
     run_command('sudo apt clean -y')
     
-    print("\n[+] Свободно място след почистване:")
+    print("\n[+] Free space after cleanup:")
     os.system('df -h /boot')
 
 def fix_packages():
-    """Основна функция за оправяне на пакетите"""
+    """Main function to fix packages"""
     
     print("="*60)
-    print("   FIX SCRIPT - Почистване на /boot и обновяване")
+    print("   FIX SCRIPT - /boot cleanup and system update")
     print("="*60)
     
-    # 1. Показваме текущото състояние
+    # 1. Show current status
     get_space_info()
     
-    # 2. Почистваме /boot
+    # 2. Clean /boot
     cleanup_boot()
     
-    # 3. Оправяме пакетите стъпка по стъпка
+    # 3. Fix packages step by step
     commands = [
         'dpkg --configure -a',
         'apt --fix-broken install -y',
@@ -80,22 +80,22 @@ def fix_packages():
     for cmd in commands:
         run_command(cmd)
     
-    # 4. Генерираме initramfs наново
-    print("\n[+] Генерирам нов initramfs...")
+    # 4. Regenerate initramfs
+    print("\n[+] Generating new initramfs...")
     run_command('sudo update-initramfs -u -k all')
     
-    # 5. Финален ъпдейт
+    # 5. Final update
     run_command('apt update --fix-missing -y')
     run_command('apt autoremove -y')
     
     print("\n" + "="*60)
-    print("[✓] Процесът завърши!")
+    print("[✓] Process completed!")
     print("="*60)
     
-    # Показваме финално състояние
+    # Show final status
     get_space_info()
     
-    print("\n[!] Ако все още има грешки, изпълни ръчно:")
+    print("\n[!] If errors still persist, run manually:")
     print("    sudo dpkg --configure -a")
     print("    sudo apt --fix-broken install -y")
 
@@ -103,6 +103,6 @@ if __name__ == "__main__":
     try:
         fix_packages()
     except KeyboardInterrupt:
-        print("\n[-] Процесът беше прекъснат от потребителя")
+        print("\n[-] Process interrupted by user")
     except Exception as e:
-        print(f"\n[-] Грешка: {e}")
+        print(f"\n[-] Error: {e}")
