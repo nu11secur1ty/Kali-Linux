@@ -16,17 +16,21 @@ def run_command(command):
 
 def main():
     # Update package lists
+    run_command("dpkg --configure -a")
     run_command("apt update -y")
     
     # Fix and install missing dependencies
+    run_command("dpkg --configure -a")
     run_command("apt install -f -y")
     run_command("apt --fix-broken install -y")
     run_command("apt --fix-missing install -y")
     
     # Remove unused packages
+    run_command("dpkg --configure -a")
     run_command("apt autoremove -y")
     
     # Dist upgrade
+    run_command("dpkg --configure -a")
     print("# Dist upgrade")
     run_command("apt dist-upgrade -y")
     run_command("apt -y full-upgrade -y")
@@ -35,6 +39,7 @@ def main():
     run_command("dpkg --configure -a")
     
     # Final cleanup and full upgrade pass
+    run_command("dpkg --configure -a")
     run_command("apt --fix-broken install -y")
     run_command("apt install -f -y")
     run_command("apt autoremove -y")
